@@ -2,146 +2,126 @@ import streamlit as st
 import streamlit as st
 import pandas as pd
 
-# 1. Konfigurasi Halaman
-st.set_page_config(page_title="Tabel Periodik Interaktif", page_icon="🧪", layout="wide")
+# Konfigurasi Halaman
+st.set_page_config(page_title="Tabel Periodik Interaktif", layout="wide", page_icon="🧪")
 
-st.title("🧪 Tabel Periodik Unsur Kimia Interaktif")
-st.markdown("Pilih unsur kimia dari *dropdown* di bawah ini untuk melihat detail lengkapnya. (Data contoh meliputi sebagian unsur Golongan IA)")
-st.divider()
-
-# 2. Dataset Contoh: Golongan IA
+# --- DATASET GOLONGAN IA ---
+# Anda dapat menambahkan golongan lain di bawah dictionary ini nanti.
 unsur_data = {
-    "Hidrogen": {
-        "Informasi Dasar": {
-            "Simbol": "H", "Nomor Atom": 1, "Massa Atom Relatif": 1.008,
-            "Golongan": "IA", "Periode": 1, "Konfigurasi Elektron": "1s¹",
-            "Kategori Unsur": "Non-logam", "Tahun Ditemukan": 1766,
-            "Valensi": 1, "Kelektronegatifan": 2.20,
-            "Titik Didih": "-252.87 °C", "Titik Lebur": "-259.16 °C"
-        },
-        "Sifat Kimia & Fisik": {
-            "pH Larutan": "Netral (dalam air)", 
-            "Kelarutan (Air)": "1.6 mg/L (20°C)",
-            "Kelarutan (Organik)": "Sedikit larut", 
-            "Reaktivitas": "Sangat reaktif dengan unsur halogen dan oksigen."
-        },
-        "Wujud Fisik": {
-            "Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "0.00008988 g/cm³"
-        },
-        "Kesehatan & Keselamatan": {
-            "Tingkat Toksisitas": "Rendah (Asfiksian ringan)", 
-            "Bahaya Kesehatan": "Dapat menyebabkan sesak napas dalam konsentrasi tinggi karena menggantikan oksigen.",
-            "Piktogram GHS": "🔥 (Gas Mudah Terbakar)", 
-            "Batas Paparan": "Tidak ada batas spesifik, pastikan kadar oksigen > 19.5%"
-        },
-        "Kegunaan": "Sintesis amonia, pemurnian minyak bumi, bahan bakar hidrogen, dan pendingin generator."
+    "H": {
+        "Informasi Dasar": {"Nama": "Hidrogen", "Simbol": "H", "Nomor Atom": 1, "Massa Atom Relatif": 1.008, "Golongan": "IA", "Periode": 1, "Konfigurasi Elektron": "1s¹", "Kategori": "Non-logam", "Tahun Ditemukan": 1766, "Valensi": 1, "Keelektronegatifan": 2.20, "Titik Didih": "-252.87 °C", "Titik Lebur": "-259.16 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Netral (dalam bentuk H2O)", "Kelarutan (Air)": "Sedikit larut", "Kelarutan (Organik)": "Larut dalam beberapa logam", "Reaktivitas": "Sangat reaktif pada suhu tinggi, membentuk senyawa dengan hampir semua unsur."},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "0.08988 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Bahaya Kesehatan": "Asfiksian (menggantikan oksigen di udara tertutup).", "Piktogram GHS": "🔥 (Mudah Terbakar), 🗜️ (Gas Bertekanan)", "Batas Paparan": "Tidak ada batas spesifik, batasi hingga level oksigen aman (>19.5%)."},
+        "Kegunaan": "Bahan bakar roket, sel bahan bakar (fuel cells), produksi amonia (proses Haber), hidrogenasi minyak."
     },
-    "Litium": {
-        "Informasi Dasar": {
-            "Simbol": "Li", "Nomor Atom": 3, "Massa Atom Relatif": 6.94,
-            "Golongan": "IA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s¹",
-            "Kategori Unsur": "Logam Alkali", "Tahun Ditemukan": 1817,
-            "Valensi": 1, "Kelektronegatifan": 0.98,
-            "Titik Didih": "1342 °C", "Titik Lebur": "180.5 °C"
-        },
-        "Sifat Kimia & Fisik": {
-            "pH Larutan": "Sangat Basa (membentuk LiOH dalam air)", 
-            "Kelarutan (Air)": "Bereaksi eksotermis (membentuk gas hidrogen)",
-            "Kelarutan (Organik)": "Larut dalam amonia cair", 
-            "Reaktivitas": "Reaktif terhadap air dan oksigen, harus disimpan dalam minyak."
-        },
-        "Wujud Fisik": {
-            "Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "0.534 g/cm³"
-        },
-        "Kesehatan & Keselamatan": {
-            "Tingkat Toksisitas": "Sedang hingga Tinggi", 
-            "Bahaya Kesehatan": "Sangat korosif. Reaksi dengan uap air di kulit menyebabkan luka bakar kimia.",
-            "Piktogram GHS": "☠️🔥 (Korosif, Mudah Terbakar, Beracun)", 
-            "Batas Paparan": "0.025 mg/m³ (sebagai hidrida/hidroksida)"
-        },
-        "Kegunaan": "Pembuatan baterai ion-litium, paduan logam untuk pesawat terbang, pengobatan gangguan bipolar (Litium karbonat)."
+    "Li": {
+        "Informasi Dasar": {"Nama": "Litium", "Simbol": "Li", "Nomor Atom": 3, "Massa Atom Relatif": 6.94, "Golongan": "IA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s¹", "Kategori": "Logam Alkali", "Tahun Ditemukan": 1817, "Valensi": 1, "Keelektronegatifan": 0.98, "Titik Didih": "1342 °C", "Titik Lebur": "180.5 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Sangat Basa (Membentuk LiOH)", "Kelarutan (Air)": "Bereaksi dengan air (eksotermis)", "Kelarutan (Organik)": "Bereaksi", "Reaktivitas": "Sangat reaktif, mudah teroksidasi di udara, bereaksi kuat dengan air."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "0.534 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sedang", "Bahaya Kesehatan": "Korosif pada kulit dan mata, toksik jika tertelan dalam jumlah besar.", "Piktogram GHS": "🔥 (Mudah Terbakar), ☠️ (Korosif)", "Batas Paparan": "0.025 mg/m³ (sebagai debu/senyawa)."},
+        "Kegunaan": "Baterai ion-litium, paduan logam untuk pesawat terbang, obat penstabil mood (Bipolar)."
     },
-    "Natrium": {
-        "Informasi Dasar": {
-            "Simbol": "Na", "Nomor Atom": 11, "Massa Atom Relatif": 22.99,
-            "Golongan": "IA", "Periode": 3, "Konfigurasi Elektron": "[Ne] 3s¹",
-            "Kategori Unsur": "Logam Alkali", "Tahun Ditemukan": 1807,
-            "Valensi": 1, "Kelektronegatifan": 0.93,
-            "Titik Didih": "883 °C", "Titik Lebur": "97.72 °C"
-        },
-        "Sifat Kimia & Fisik": {
-            "pH Larutan": "Sangat Basa (membentuk NaOH)", 
-            "Kelarutan (Air)": "Bereaksi sangat keras/meledak di air",
-            "Kelarutan (Organik)": "Tidak larut dalam pelarut organik biasa", 
-            "Reaktivitas": "Sangat reaktif terhadap air dan kelembapan udara."
-        },
-        "Wujud Fisik": {
-            "Wujud (25°C)": "Padat (Lunak)", "Warna": "Putih keperakan", "Massa Jenis": "0.968 g/cm³"
-        },
-        "Kesehatan & Keselamatan": {
-            "Tingkat Toksisitas": "Tinggi", 
-            "Bahaya Kesehatan": "Luka bakar termal dan kimia yang sangat parah jika terkena kulit basah.",
-            "Piktogram GHS": "💥🔥 (Eksplosif dengan Air, Korosif)", 
-            "Batas Paparan": "2 mg/m³ (sebagai NaOH)"
-        },
-        "Kegunaan": "Lampu jalan (lampu uap natrium), pendingin reaktor nuklir, sintesis bahan kimia, dan garam dapur (sebagai senyawa NaCl)."
+    "Na": {
+        "Informasi Dasar": {"Nama": "Natrium", "Simbol": "Na", "Nomor Atom": 11, "Massa Atom Relatif": 22.990, "Golongan": "IA", "Periode": 3, "Konfigurasi Elektron": "[Ne] 3s¹", "Kategori": "Logam Alkali", "Tahun Ditemukan": 1807, "Valensi": 1, "Keelektronegatifan": 0.93, "Titik Didih": "883 °C", "Titik Lebur": "97.79 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Sangat Basa (Membentuk NaOH)", "Kelarutan (Air)": "Bereaksi hebat dengan air", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Sangat reaktif, bereaksi eksplosif dengan air membentuk gas hidrogen."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "0.968 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sedang (bahaya fisik tinggi)", "Bahaya Kesehatan": "Memicu luka bakar termal dan kimia yang parah jika terkena kulit basah.", "Piktogram GHS": "🔥 (Mudah Terbakar), ☠️ (Korosif)", "Batas Paparan": "2 mg/m³ (sebagai NaOH)."},
+        "Kegunaan": "Garam dapur (NaCl), lampu jalan (lampu natrium), pendingin di reaktor nuklir."
+    },
+    "K": {
+        "Informasi Dasar": {"Nama": "Kalium", "Simbol": "K", "Nomor Atom": 19, "Massa Atom Relatif": 39.098, "Golongan": "IA", "Periode": 4, "Konfigurasi Elektron": "[Ar] 4s¹", "Kategori": "Logam Alkali", "Tahun Ditemukan": 1807, "Valensi": 1, "Keelektronegatifan": 0.82, "Titik Didih": "759 °C", "Titik Lebur": "63.5 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Sangat Basa (Membentuk KOH)", "Kelarutan (Air)": "Bereaksi sangat hebat dengan air", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Lebih reaktif dari Natrium, menyala spontan saat kontak dengan air."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "0.862 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sedang", "Bahaya Kesehatan": "Luka bakar korosif parah, hiperkalemia jika kelebihan dosis dalam tubuh.", "Piktogram GHS": "🔥 (Mudah Terbakar), ☠️ (Korosif)", "Batas Paparan": "2 mg/m³ (sebagai KOH)."},
+        "Kegunaan": "Pupuk (NPK), sabun cair, menjaga keseimbangan elektrolit dalam tubuh."
+    },
+    "Rb": {
+        "Informasi Dasar": {"Nama": "Rubidium", "Simbol": "Rb", "Nomor Atom": 37, "Massa Atom Relatif": 85.468, "Golongan": "IA", "Periode": 5, "Konfigurasi Elektron": "[Kr] 5s¹", "Kategori": "Logam Alkali", "Tahun Ditemukan": 1861, "Valensi": 1, "Keelektronegatifan": 0.82, "Titik Didih": "688 °C", "Titik Lebur": "39.3 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Sangat Basa (Membentuk RbOH)", "Kelarutan (Air)": "Bereaksi secara eksplosif", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Menyala spontan di udara, bereaksi sangat eksplosif dengan air."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Sangat lunak)", "Warna": "Abu-abu keperakan", "Massa Jenis": "1.532 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah hingga Sedang", "Bahaya Kesehatan": "Luka bakar termal dan kimia akibat reaksi dengan kelembapan kulit.", "Piktogram GHS": "🔥 (Mudah Terbakar), ☠️ (Korosif)", "Batas Paparan": "Belum ada standar khusus, ditangani seperti logam alkali lainnya."},
+        "Kegunaan": "Jam atom, kaca khusus, kembang api (warna ungu/merah)."
+    },
+    "Cs": {
+        "Informasi Dasar": {"Nama": "Sesium", "Simbol": "Cs", "Nomor Atom": 55, "Massa Atom Relatif": 132.905, "Golongan": "IA", "Periode": 6, "Konfigurasi Elektron": "[Xe] 6s¹", "Kategori": "Logam Alkali", "Tahun Ditemukan": 1860, "Valensi": 1, "Keelektronegatifan": 0.79, "Titik Didih": "671 °C", "Titik Lebur": "28.5 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Sangat Basa (Membentuk CsOH)", "Kelarutan (Air)": "Bereaksi secara eksplosif", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Logam paling reaktif, meledak saat kontak dengan air dingin atau udara."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Cair pada hari yang panas)", "Warna": "Keperakan-Emas", "Massa Jenis": "1.93 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah (Toksisitas radionuklida tinggi untuk isotop Cs-137)", "Bahaya Kesehatan": "Luka bakar luar biasa parah.", "Piktogram GHS": "🔥 (Sangat Mudah Terbakar), ☠️ (Korosif)", "Batas Paparan": "Tidak ada standar khusus unsur stabil."},
+        "Kegunaan": "Jam atom paling akurat, cairan pemboran minyak, sel fotolistrik."
+    },
+    "Fr": {
+        "Informasi Dasar": {"Nama": "Fransium", "Simbol": "Fr", "Nomor Atom": 87, "Massa Atom Relatif": 223, "Golongan": "IA", "Periode": 7, "Konfigurasi Elektron": "[Rn] 7s¹", "Kategori": "Logam Alkali", "Tahun Ditemukan": 1939, "Valensi": 1, "Keelektronegatifan": "0.7 (estimasi)", "Titik Didih": "677 °C (estimasi)", "Titik Lebur": "27 °C (estimasi)"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Sangat Basa (Membentuk FrOH)", "Kelarutan (Air)": "Diasumsikan bereaksi sangat eksplosif", "Kelarutan (Organik)": "Tidak diketahui", "Reaktivitas": "Secara teoritis logam basa paling reaktif, namun karena waktu paruh sangat singkat, sulit diteliti."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (estimasi)", "Warna": "Metalik (estimasi)", "Massa Jenis": "1.87 g/cm³ (estimasi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Bahaya Kesehatan": "Kerusakan jaringan akibat radiasi tinggi.", "Piktogram GHS": "☢️ (Radioaktif)", "Batas Paparan": "Dilarang terpapar, penanganan di fasilitas khusus."},
+        "Kegunaan": "Hanya digunakan untuk tujuan penelitian dasar (tidak ada kegunaan komersial)."
     }
 }
 
-# 3. Antarmuka Pencarian / Pemilihan
-daftar_unsur = list(unsur_data.keys())
-unsur_terpilih = st.selectbox("🔍 Cari dan Pilih Unsur Kimia:", daftar_unsur)
+# --- APLIKASI UTAMA ---
+st.title("Tabel Periodik Unsur Kimia Interaktif ⚛️")
+st.write("Jelajahi sifat dan informasi mendetail tentang unsur-unsur kimia. Pilih unsur pada grid di sebelah kiri untuk melihat detailnya.")
+st.markdown("---")
 
-# Ambil data berdasarkan unsur yang dipilih
-data = unsur_data[unsur_terpilih]
+# Menggunakan Session State untuk mengingat unsur yang dipilih
+if 'unsur_terpilih' not in st.session_state:
+    st.session_state.unsur_terpilih = 'H'
 
-st.header(f"{unsur_terpilih} ({data['Informasi Dasar']['Simbol']})")
+# Layout Kiri (Tabel/Pilihan Unsur) dan Kanan (Detail)
+col_tabel, col_detail = st.columns([1, 4])
 
-# 4. Membuat Tabs untuk Kategorisasi Informasi
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "📑 Informasi Dasar", 
-    "🧪 Sifat Kimia & Fisik", 
-    "🧊 Wujud Fisik", 
-    "⚠️ Kesehatan & Keselamatan", 
-    "🏭 Kegunaan"
-])
+with col_tabel:
+    st.subheader("Gol. IA")
+    # Membuat tombol bersusun ke bawah menyerupai kolom Tabel Periodik
+    for simbol in unsur_data.keys():
+        if st.button(simbol, use_container_width=True):
+            st.session_state.unsur_terpilih = simbol
+    
+    st.markdown("*Note: Golongan lain akan ditambahkan di versi berikutnya.*")
 
-# Fungsi bantuan untuk merender dictionary ke dalam 2 kolom agar rapi
-def render_dict_to_columns(data_dict):
-    col1, col2 = st.columns(2)
-    items = list(data_dict.items())
-    mid = (len(items) + 1) // 2
-    for k, v in items[:mid]:
-        col1.markdown(f"**{k}:** {v}")
-    for k, v in items[mid:]:
-        col2.markdown(f"**{k}:** {v}")
+with col_detail:
+    # Mengambil data dari unsur yang sedang dipilih di session state
+    unsur_aktif = unsur_data[st.session_state.unsur_terpilih]
+    
+    st.header(f"{unsur_aktif['Informasi Dasar']['Nama']} ({st.session_state.unsur_terpilih})")
+    st.caption(f"Nomor Atom: {unsur_aktif['Informasi Dasar']['Nomor Atom']} | Kategori: {unsur_aktif['Informasi Dasar']['Kategori']}")
+    
+    # Membuat 5 Tabs Sesuai Permintaan
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+        "Informasi Dasar", 
+        "Sifat Kimia & Fisik", 
+        "Wujud Fisik", 
+        "Kesehatan & Keselamatan", 
+        "Kegunaan"
+    ])
+    
+    with tab1:
+        st.subheader("Informasi Dasar")
+        # Mengubah dictionary menjadi dataframe untuk tampilan tabel yang rapi
+        df_dasar = pd.DataFrame(list(unsur_aktif["Informasi Dasar"].items()), columns=["Properti", "Nilai"])
+        # Menyembunyikan index saat render
+        st.dataframe(df_dasar, hide_index=True, use_container_width=True)
 
-# Tab 1: Informasi Dasar
-with tab1:
-    st.subheader("Data Dasar Unsur")
-    render_dict_to_columns(data["Informasi Dasar"])
+    with tab2:
+        st.subheader("Sifat Kimia & Fisik")
+        for key, value in unsur_aktif["Sifat Kimia & Fisik"].items():
+            st.markdown(f"**{key}:** {value}")
 
-# Tab 2: Sifat Kimia & Fisik
-with tab2:
-    st.subheader("Reaktivitas dan Sifat Lainnya")
-    render_dict_to_columns(data["Sifat Kimia & Fisik"])
+    with tab3:
+        st.subheader("Wujud Fisik")
+        col_wujud1, col_wujud2, col_wujud3 = st.columns(3)
+        col_wujud1.metric("Wujud (25°C)", unsur_aktif["Wujud Fisik"]["Wujud (25°C)"])
+        col_wujud2.metric("Warna", unsur_aktif["Wujud Fisik"]["Warna"])
+        col_wujud3.metric("Massa Jenis", unsur_aktif["Wujud Fisik"]["Massa Jenis"])
 
-# Tab 3: Wujud Fisik
-with tab3:
-    st.subheader("Keadaan Fisik pada Suhu Ruang")
-    render_dict_to_columns(data["Wujud Fisik"])
+    with tab4:
+        st.subheader("Kesehatan & Keselamatan")
+        st.info(f"**Piktogram GHS:** {unsur_aktif['Kesehatan & Keselamatan']['Piktogram GHS']}")
+        st.write(f"**Tingkat Toksisitas:** {unsur_aktif['Kesehatan & Keselamatan']['Toksisitas']}")
+        st.write(f"**Bahaya Kesehatan:** {unsur_aktif['Kesehatan & Keselamatan']['Bahaya Kesehatan']}")
+        st.write(f"**Batas Paparan Kerja:** {unsur_aktif['Kesehatan & Keselamatan']['Batas Paparan']}")
 
-# Tab 4: Kesehatan & Keselamatan
-with tab4:
-    st.subheader("Protokol Keselamatan dan Bahaya")
-    # Menggunakan expander untuk informasi tambahan di dalam tab ini
-    for k, v in data["Kesehatan & Keselamatan"].items():
-        if k == "Piktogram GHS":
-            st.warning(f"**{k}:** {v}")
-        else:
-            st.markdown(f"**{k}:** {v}")
-
-# Tab 5: Kegunaan
-with tab5:
-    st.subheader("Aplikasi di Dunia Nyata")
-    st.info(data["Kegunaan"])
+    with tab5:
+        st.subheader("Kegunaan Utama di Dunia Nyata")
+        st.success(unsur_aktif["Kegunaan"])
