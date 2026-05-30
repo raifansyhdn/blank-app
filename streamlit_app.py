@@ -114,7 +114,8 @@ unsur_data = {
         "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi sangat tidak reaktif, mirip Platina"},
         "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Putih keperakan (Diprediksi)", "Massa Jenis": "34.8 g/cm³ (Diprediksi)"},
         "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Meluruh terlalu cepat untuk berdampak secara kimiawi, bahaya murni dari radiasi", "Batas Paparan": "Siklotron/pemercepat partikel eksklusif"},
-        "Kegunaan": "Memperluas pemahaman manusia tentang nukleus dan tabel periodik."
+        "Kegunaan": "Memperluas pemahaman manusia tentang nukleus dan tabel periodik.",
+    
     }# GOLONGAN IVB (Periode 7)
     "Rf": {
         "Informasi Dasar": {"Nama": "Rutherfordium", "Nomor Atom": 104, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "267 (estimasi)", "Golongan": "IVB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d² 7s²", "Tahun Ditemukan": 1964},
