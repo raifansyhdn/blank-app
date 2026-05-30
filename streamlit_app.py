@@ -58,6 +58,121 @@ unsur_data = {
     "Ni": {"Informasi Dasar": {"Nama": "Nikel", "Nomor Atom": 28, "Kategori": "Logam Transisi", "Massa Atom Relatif": 58.693, "Golongan": "VIIIB", "Periode": 4, "Konfigurasi Elektron": "[Ar] 3d⁸ 4s²", "Tahun Ditemukan": 1751}, "Sifat Kimia & Fisik": {"Reaktivitas": "Tahan korosi tinggi (feromagnetik ringan)"}, "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan sedikit kuning emas", "Massa Jenis": "8.908 g/cm³"}, "Kesehatan & Keselamatan": {"Toksisitas": "Sedang", "Piktogram GHS": "⚠️, 🫁", "Bahaya Kesehatan": "Pemicu alergi kontak tersering pada perhiasan tiruan, debu bersifat karsinogen.", "Batas Paparan": "1 mg/m³"}, "Kegunaan": "Baterai rechargable, paduan koin, pelapisan pelindung, baja stainless."},
     "Pd": {"Informasi Dasar": {"Nama": "Paladium", "Nomor Atom": 46, "Kategori": "Logam Transisi", "Massa Atom Relatif": 106.42, "Golongan": "VIIIB", "Periode": 5, "Konfigurasi Elektron": "[Kr] 4d¹⁰", "Tahun Ditemukan": 1803}, "Sifat Kimia & Fisik": {"Reaktivitas": "Mampu menyerap gas hidrogen hingga 900 kali volume dirinya"}, "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan baja", "Massa Jenis": "12.02 g/cm³"}, "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "✅", "Bahaya Kesehatan": "Logam aslinya aman, senyawanya dapat menyebabkan iritasi mata.", "Batas Paparan": "Tidak ada"}, "Kegunaan": "Konverter katalitik pengurang emisi mobil, perhiasan emas putih, elektronik."},
     "Pt": {"Informasi Dasar": {"Nama": "Platina", "Nomor Atom": 78, "Kategori": "Logam Transisi", "Massa Atom Relatif": 195.08, "Golongan": "VIIIB", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹⁴ 5d⁹ 6s¹", "Tahun Ditemukan": 1735}, "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat lembam (inert), tidak berkarat pada suhu berapa pun"}, "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih metalik", "Massa Jenis": "21.45 g/cm³"}, "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "✅", "Bahaya Kesehatan": "Non-toksik dalam bentuk logam. Beberapa senyawa digunakan sebagai obat kemoterapi.", "Batas Paparan": "1 mg/m³"}, "Kegunaan": "Perhiasan elit, obat kemoterapi (Cisplatin), alat pacu jantung."}
+# GOLONGAN IVB (Periode 7)
+    "Rf": {
+        "Informasi Dasar": {"Nama": "Rutherfordium", "Nomor Atom": 104, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "267 (estimasi)", "Golongan": "IVB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d² 7s²", "Tahun Ditemukan": 1964},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi mirip dengan Hafnium dan Zirkonium"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "23.2 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Paparan radiasi mematikan", "Batas Paparan": "Hanya ada di laboratorium nuklir"},
+        "Kegunaan": "Hanya untuk penelitian ilmiah dan eksperimen fisika partikel."
+    },
+    
+    # GOLONGAN VB (Periode 7)
+    "Db": {
+        "Informasi Dasar": {"Nama": "Dubnium", "Nomor Atom": 105, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "268 (estimasi)", "Golongan": "VB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d³ 7s²", "Tahun Ditemukan": 1967},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi mirip dengan Tantalum"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "29.3 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Paparan radiasi mematikan", "Batas Paparan": "Hanya diproduksi beberapa atom dalam satu waktu"},
+        "Kegunaan": "Hanya untuk penelitian ilmiah murni."
+    },
+    
+    # GOLONGAN VIB (Periode 7)
+    "Sg": {
+        "Informasi Dasar": {"Nama": "Seaborgium", "Nomor Atom": 106, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "269 (estimasi)", "Golongan": "VIB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d⁴ 7s²", "Tahun Ditemukan": 1974},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi membentuk oksida asam mirip dengan Tungsten"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "35.0 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Paparan radiasi mematikan", "Batas Paparan": "Eksperimen laboratorium berpelindung ketat"},
+        "Kegunaan": "Hanya untuk penelitian ilmiah."
+    },
+    
+    # GOLONGAN VIIB (Periode 7)
+    "Bh": {
+        "Informasi Dasar": {"Nama": "Bohrium", "Nomor Atom": 107, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "270 (estimasi)", "Golongan": "VIIB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d⁵ 7s²", "Tahun Ditemukan": 1981},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi mirip dengan Renium"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "37.1 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Paparan radiasi mematikan", "Batas Paparan": "Tidak diterapkan secara umum"},
+        "Kegunaan": "Penelitian ilmiah (sifat kimianya sangat sulit diuji karena meluruh terlalu cepat)."
+    },
+    
+    # GOLONGAN VIIIB (Periode 7)
+    "Hs": {
+        "Informasi Dasar": {"Nama": "Hassium", "Nomor Atom": 108, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "277 (estimasi)", "Golongan": "VIIIB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d⁶ 7s²", "Tahun Ditemukan": 1984},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diketahui membentuk Hassium tetroksida (HsO4) yang sangat mudah menguap, mirip Osmium"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "40.7 g/cm³ (Diprediksi - mungkin unsur terpadat)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya radiasi ionisasi ekstrem", "Batas Paparan": "Hanya untuk ahli fisika nuklir"},
+        "Kegunaan": "Penelitian ilmiah murni."
+    },
+    "Mt": {
+        "Informasi Dasar": {"Nama": "Meitnerium", "Nomor Atom": 109, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "278 (estimasi)", "Golongan": "VIIIB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d⁷ 7s²", "Tahun Ditemukan": 1982},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi merupakan logam mulia mirip Iridium"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "37.4 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Radiasi tinggi (meluruh dalam milidetik)", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Tidak ada kegunaan komersial, hanya eksperimen percepatan partikel."
+    },
+    "Ds": {
+        "Informasi Dasar": {"Nama": "Darmstadtium", "Nomor Atom": 110, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "281 (estimasi)", "Golongan": "VIIIB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d⁸ 7s² (Diprediksi)", "Tahun Ditemukan": 1994},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi sangat tidak reaktif, mirip Platina"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Putih keperakan (Diprediksi)", "Massa Jenis": "34.8 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Meluruh terlalu cepat untuk berdampak secara kimiawi, bahaya murni dari radiasi", "Batas Paparan": "Siklotron/pemercepat partikel eksklusif"},
+        "Kegunaan": "Memperluas pemahaman manusia tentang nukleus dan tabel periodik."
+    }# GOLONGAN IVB (Periode 7)
+    "Rf": {
+        "Informasi Dasar": {"Nama": "Rutherfordium", "Nomor Atom": 104, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "267 (estimasi)", "Golongan": "IVB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d² 7s²", "Tahun Ditemukan": 1964},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi mirip dengan Hafnium dan Zirkonium"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "23.2 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Paparan radiasi mematikan", "Batas Paparan": "Hanya ada di laboratorium nuklir"},
+        "Kegunaan": "Hanya untuk penelitian ilmiah dan eksperimen fisika partikel."
+    },
+    
+    # GOLONGAN VB (Periode 7)
+    "Db": {
+        "Informasi Dasar": {"Nama": "Dubnium", "Nomor Atom": 105, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "268 (estimasi)", "Golongan": "VB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d³ 7s²", "Tahun Ditemukan": 1967},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi mirip dengan Tantalum"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "29.3 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Paparan radiasi mematikan", "Batas Paparan": "Hanya diproduksi beberapa atom dalam satu waktu"},
+        "Kegunaan": "Hanya untuk penelitian ilmiah murni."
+    },
+    
+    # GOLONGAN VIB (Periode 7)
+    "Sg": {
+        "Informasi Dasar": {"Nama": "Seaborgium", "Nomor Atom": 106, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "269 (estimasi)", "Golongan": "VIB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d⁴ 7s²", "Tahun Ditemukan": 1974},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi membentuk oksida asam mirip dengan Tungsten"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "35.0 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Paparan radiasi mematikan", "Batas Paparan": "Eksperimen laboratorium berpelindung ketat"},
+        "Kegunaan": "Hanya untuk penelitian ilmiah."
+    },
+    
+    # GOLONGAN VIIB (Periode 7)
+    "Bh": {
+        "Informasi Dasar": {"Nama": "Bohrium", "Nomor Atom": 107, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "270 (estimasi)", "Golongan": "VIIB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d⁵ 7s²", "Tahun Ditemukan": 1981},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi mirip dengan Renium"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "37.1 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Paparan radiasi mematikan", "Batas Paparan": "Tidak diterapkan secara umum"},
+        "Kegunaan": "Penelitian ilmiah (sifat kimianya sangat sulit diuji karena meluruh terlalu cepat)."
+    },
+    
+    # GOLONGAN VIIIB (Periode 7)
+    "Hs": {
+        "Informasi Dasar": {"Nama": "Hassium", "Nomor Atom": 108, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "277 (estimasi)", "Golongan": "VIIIB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d⁶ 7s²", "Tahun Ditemukan": 1984},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diketahui membentuk Hassium tetroksida (HsO4) yang sangat mudah menguap, mirip Osmium"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "40.7 g/cm³ (Diprediksi - mungkin unsur terpadat)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya radiasi ionisasi ekstrem", "Batas Paparan": "Hanya untuk ahli fisika nuklir"},
+        "Kegunaan": "Penelitian ilmiah murni."
+    },
+    "Mt": {
+        "Informasi Dasar": {"Nama": "Meitnerium", "Nomor Atom": 109, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "278 (estimasi)", "Golongan": "VIIIB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d⁷ 7s²", "Tahun Ditemukan": 1982},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi merupakan logam mulia mirip Iridium"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "37.4 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Radiasi tinggi (meluruh dalam milidetik)", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Tidak ada kegunaan komersial, hanya eksperimen percepatan partikel."
+    },
+    "Ds": {
+        "Informasi Dasar": {"Nama": "Darmstadtium", "Nomor Atom": 110, "Kategori": "Logam Transisi (Superberat)", "Massa Atom Relatif": "281 (estimasi)", "Golongan": "VIIIB", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d⁸ 7s² (Diprediksi)", "Tahun Ditemukan": 1994},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi sangat tidak reaktif, mirip Platina"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Putih keperakan (Diprediksi)", "Massa Jenis": "34.8 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Meluruh terlalu cepat untuk berdampak secara kimiawi, bahaya murni dari radiasi", "Batas Paparan": "Siklotron/pemercepat partikel eksklusif"},
+        "Kegunaan": "Memperluas pemahaman manusia tentang nukleus dan tabel periodik."
+    }
 }
 
 st.title("Tabel Periodik Unsur Kimia Interaktif ⚛️")
