@@ -125,7 +125,7 @@ with col_detail:
     with tab5:
         st.subheader("Kegunaan Utama di Dunia Nyata")
         st.success(unsur_aktif["Kegunaan"])
-
+{,
 "Be": {
         "Informasi Dasar": {"Nama": "Berilium", "Simbol": "Be", "Nomor Atom": 4, "Massa Atom Relatif": 9.012, "Golongan": "IIA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1798, "Valensi": 2, "Keelektronegatifan": 1.57, "Titik Didih": "2469 °C", "Titik Lebur": "1287 °C"},
         "Sifat Kimia & Fisik": {"pH Larutan": "Sedikit asam (dalam bentuk garam terlarut)", "Kelarutan (Air)": "Tidak larut", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Reaktivitas rendah pada suhu ruang, tidak bereaksi dengan air karena membentuk lapisan oksida pelindung."},
