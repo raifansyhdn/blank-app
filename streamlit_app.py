@@ -56,6 +56,48 @@ unsur_data = {
         "Wujud Fisik": {"Wujud (25°C)": "Padat (estimasi)", "Warna": "Metalik (estimasi)", "Massa Jenis": "1.87 g/cm³ (estimasi)"},
         "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Bahaya Kesehatan": "Kerusakan jaringan akibat radiasi tinggi.", "Piktogram GHS": "☢️ (Radioaktif)", "Batas Paparan": "Dilarang terpapar, penanganan di fasilitas khusus."},
         "Kegunaan": "Hanya digunakan untuk tujuan penelitian dasar (tidak ada kegunaan komersial)."
+    },
+    "Be": {
+        "Informasi Dasar": {"Nama": "Berilium", "Simbol": "Be", "Nomor Atom": 4, "Massa Atom Relatif": 9.012, "Golongan": "IIA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1798, "Valensi": 2, "Keelektronegatifan": 1.57, "Titik Didih": "2469 °C", "Titik Lebur": "1287 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Sedikit asam (dalam bentuk garam terlarut)", "Kelarutan (Air)": "Tidak larut", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Reaktivitas rendah pada suhu ruang, tidak bereaksi dengan air karena membentuk lapisan oksida pelindung."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu baja", "Massa Jenis": "1.85 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Tinggi", "Bahaya Kesehatan": "Karsinogenik. Menghirup debunya memicu Beriliosis (penyakit paru-paru yang fatal).", "Piktogram GHS": "☠️ (Beracun), 🫁 (Bahaya Kesehatan)", "Batas Paparan": "0.0002 mg/m³ (sangat ketat)."},
+        "Kegunaan": "Paduan tembaga-berilium (alat bebas percikan api), jendela tabung sinar-X, komponen pesawat ruang angkasa."
+    },
+    "Mg": {
+        "Informasi Dasar": {"Nama": "Magnesium", "Simbol": "Mg", "Nomor Atom": 12, "Massa Atom Relatif": 24.305, "Golongan": "IIA", "Periode": 3, "Konfigurasi Elektron": "[Ne] 3s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1755, "Valensi": 2, "Keelektronegatifan": 1.31, "Titik Didih": "1090 °C", "Titik Lebur": "650 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Basa Lemah (Membentuk Mg(OH)2)", "Kelarutan (Air)": "Bereaksi lambat dengan air panas", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Terbakar di udara dengan nyala putih yang sangat terang dan menyilaukan."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu mengkilap", "Massa Jenis": "1.74 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Bahaya Kesehatan": "Debu atau pita magnesium sangat mudah terbakar dan sulit dipadamkan.", "Piktogram GHS": "🔥 (Mudah Terbakar)", "Batas Paparan": "10 mg/m³ (sebagai debu total)."},
+        "Kegunaan": "Paduan aluminium (velg mobil/pesawat), obat antasida (obat maag), kembang api, klorofil pada tumbuhan."
+    },
+    "Ca": {
+        "Informasi Dasar": {"Nama": "Kalsium", "Simbol": "Ca", "Nomor Atom": 20, "Massa Atom Relatif": 40.078, "Golongan": "IIA", "Periode": 4, "Konfigurasi Elektron": "[Ar] 4s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1808, "Valensi": 2, "Keelektronegatifan": 1.00, "Titik Didih": "1484 °C", "Titik Lebur": "842 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Basa Kuat (Membentuk Ca(OH)2)", "Kelarutan (Air)": "Bereaksi membentuk gas hidrogen", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Cukup reaktif di udara terbuka, bereaksi stabil dengan air."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan-putih (kusam jika teroksidasi)", "Massa Jenis": "1.55 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah (Penting bagi tubuh)", "Bahaya Kesehatan": "Logam murni bersifat korosif pada kulit yang lembab karena reaksi basa.", "Piktogram GHS": "🔥 (Mudah Terbakar), ☠️ (Korosif)", "Batas Paparan": "2 mg/m³ (sebagai Kalsium Oksida)."},
+        "Kegunaan": "Bahan baku semen dan beton, pembuatan baja, suplemen tulang, koagulasi darah dalam tubuh."
+    },
+    "Sr": {
+        "Informasi Dasar": {"Nama": "Stronsium", "Simbol": "Sr", "Nomor Atom": 38, "Massa Atom Relatif": 87.62, "Golongan": "IIA", "Periode": 5, "Konfigurasi Elektron": "[Kr] 5s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1790, "Valensi": 2, "Keelektronegatifan": 0.95, "Titik Didih": "1382 °C", "Titik Lebur": "777 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Basa Kuat (Membentuk Sr(OH)2)", "Kelarutan (Air)": "Bereaksi kuat dengan air", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Sangat reaktif di udara (harus disimpan dalam minyak), terbakar dengan nyala merah tua."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan (Cepat menguning di udara)", "Massa Jenis": "2.64 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah (Bentuk stabil)", "Bahaya Kesehatan": "Isotop Sr-90 sangat radioaktif dan berbahaya bagi tulang.", "Piktogram GHS": "🔥 (Mudah Terbakar), ☠️ (Korosif)", "Batas Paparan": "Tidak ada standar khusus untuk logam murni stabil."},
+        "Kegunaan": "Pewarna merah pada kembang api dan suar, pasta gigi untuk gigi sensitif (Stronsium klorida)."
+    },
+    "Ba": {
+        "Informasi Dasar": {"Nama": "Barium", "Simbol": "Ba", "Nomor Atom": 56, "Massa Atom Relatif": 137.327, "Golongan": "IIA", "Periode": 6, "Konfigurasi Elektron": "[Xe] 6s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1774, "Valensi": 2, "Keelektronegatifan": 0.89, "Titik Didih": "1897 °C", "Titik Lebur": "727 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Sangat Basa (Membentuk Ba(OH)2)", "Kelarutan (Air)": "Bereaksi sangat kuat dengan air", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Sangat reaktif, mudah teroksidasi, terbakar dengan nyala hijau apel."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu keperakan", "Massa Jenis": "3.51 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Tinggi (Terutama garam terlarutnya)", "Bahaya Kesehatan": "Garam barium terlarut beracun dan menyebabkan kram otot hingga gangguan jantung.", "Piktogram GHS": "🔥 (Mudah Terbakar), ☠️ (Beracun)", "Batas Paparan": "0.5 mg/m³."},
+        "Kegunaan": "Pewarna hijau pada kembang api, cairan kontras untuk rontgen saluran pencernaan (Barium sulfat), cairan pengeboran sumur minyak."
+    },
+    "Ra": {
+        "Informasi Dasar": {"Nama": "Radium", "Simbol": "Ra", "Nomor Atom": 88, "Massa Atom Relatif": 226, "Golongan": "IIA", "Periode": 7, "Konfigurasi Elektron": "[Rn] 7s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1898, "Valensi": 2, "Keelektronegatifan": 0.9, "Titik Didih": "1140 °C (estimasi)", "Titik Lebur": "700 °C"},
+        "Sifat Kimia & Fisik": {"pH Larutan": "Sangat Basa (Membentuk Ra(OH)2)", "Kelarutan (Air)": "Bereaksi sangat kuat dengan air", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Secara kimia mirip dengan Barium, namun memancarkan radiasi alfa, beta, dan gamma."},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan (bercahaya biru samar di kegelapan)", "Massa Jenis": "5.5 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Bahaya Kesehatan": "Penumpukan di dalam tulang memicu kanker tulang dan penyakit radiasi.", "Piktogram GHS": "☢️ (Radioaktif)", "Batas Paparan": "Diatur sangat ketat, fasilitas nuklir/medis khusus."},
+        "Kegunaan": "Pengobatan kanker (historis), cat bercahaya pada jam tangan kuno (kini dilarang karena mematikan)."
     }
 }
 
@@ -124,46 +166,4 @@ with col_detail:
 
     with tab5:
         st.subheader("Kegunaan Utama di Dunia Nyata")
-        st.success(unsur_aktif["Kegunaan"]),
-   "Be": {
-        "Informasi Dasar": {"Nama": "Berilium", "Simbol": "Be", "Nomor Atom": 4, "Massa Atom Relatif": 9.012, "Golongan": "IIA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1798, "Valensi": 2, "Keelektronegatifan": 1.57, "Titik Didih": "2469 °C", "Titik Lebur": "1287 °C"},
-        "Sifat Kimia & Fisik": {"pH Larutan": "Sedikit asam (dalam bentuk garam terlarut)", "Kelarutan (Air)": "Tidak larut", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Reaktivitas rendah pada suhu ruang, tidak bereaksi dengan air karena membentuk lapisan oksida pelindung."},
-        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu baja", "Massa Jenis": "1.85 g/cm³"},
-        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Tinggi", "Bahaya Kesehatan": "Karsinogenik. Menghirup debunya memicu Beriliosis (penyakit paru-paru yang fatal).", "Piktogram GHS": "☠️ (Beracun), 🫁 (Bahaya Kesehatan)", "Batas Paparan": "0.0002 mg/m³ (sangat ketat)."},
-        "Kegunaan": "Paduan tembaga-berilium (alat bebas percikan api), jendela tabung sinar-X, komponen pesawat ruang angkasa."
-    },
-    "Mg": {
-        "Informasi Dasar": {"Nama": "Magnesium", "Simbol": "Mg", "Nomor Atom": 12, "Massa Atom Relatif": 24.305, "Golongan": "IIA", "Periode": 3, "Konfigurasi Elektron": "[Ne] 3s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1755, "Valensi": 2, "Keelektronegatifan": 1.31, "Titik Didih": "1090 °C", "Titik Lebur": "650 °C"},
-        "Sifat Kimia & Fisik": {"pH Larutan": "Basa Lemah (Membentuk Mg(OH)2)", "Kelarutan (Air)": "Bereaksi lambat dengan air panas", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Terbakar di udara dengan nyala putih yang sangat terang dan menyilaukan."},
-        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu mengkilap", "Massa Jenis": "1.74 g/cm³"},
-        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Bahaya Kesehatan": "Debu atau pita magnesium sangat mudah terbakar dan sulit dipadamkan.", "Piktogram GHS": "🔥 (Mudah Terbakar)", "Batas Paparan": "10 mg/m³ (sebagai debu total)."},
-        "Kegunaan": "Paduan aluminium (velg mobil/pesawat), obat antasida (obat maag), kembang api, klorofil pada tumbuhan."
-    },
-    "Ca": {
-        "Informasi Dasar": {"Nama": "Kalsium", "Simbol": "Ca", "Nomor Atom": 20, "Massa Atom Relatif": 40.078, "Golongan": "IIA", "Periode": 4, "Konfigurasi Elektron": "[Ar] 4s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1808, "Valensi": 2, "Keelektronegatifan": 1.00, "Titik Didih": "1484 °C", "Titik Lebur": "842 °C"},
-        "Sifat Kimia & Fisik": {"pH Larutan": "Basa Kuat (Membentuk Ca(OH)2)", "Kelarutan (Air)": "Bereaksi membentuk gas hidrogen", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Cukup reaktif di udara terbuka, bereaksi stabil dengan air."},
-        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan-putih (kusam jika teroksidasi)", "Massa Jenis": "1.55 g/cm³"},
-        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah (Penting bagi tubuh)", "Bahaya Kesehatan": "Logam murni bersifat korosif pada kulit yang lembab karena reaksi basa.", "Piktogram GHS": "🔥 (Mudah Terbakar), ☠️ (Korosif)", "Batas Paparan": "2 mg/m³ (sebagai Kalsium Oksida)."},
-        "Kegunaan": "Bahan baku semen dan beton, pembuatan baja, suplemen tulang, koagulasi darah dalam tubuh."
-    },
-    "Sr": {
-        "Informasi Dasar": {"Nama": "Stronsium", "Simbol": "Sr", "Nomor Atom": 38, "Massa Atom Relatif": 87.62, "Golongan": "IIA", "Periode": 5, "Konfigurasi Elektron": "[Kr] 5s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1790, "Valensi": 2, "Keelektronegatifan": 0.95, "Titik Didih": "1382 °C", "Titik Lebur": "777 °C"},
-        "Sifat Kimia & Fisik": {"pH Larutan": "Basa Kuat (Membentuk Sr(OH)2)", "Kelarutan (Air)": "Bereaksi kuat dengan air", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Sangat reaktif di udara (harus disimpan dalam minyak), terbakar dengan nyala merah tua."},
-        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan (Cepat menguning di udara)", "Massa Jenis": "2.64 g/cm³"},
-        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah (Bentuk stabil)", "Bahaya Kesehatan": "Isotop Sr-90 sangat radioaktif dan berbahaya bagi tulang.", "Piktogram GHS": "🔥 (Mudah Terbakar), ☠️ (Korosif)", "Batas Paparan": "Tidak ada standar khusus untuk logam murni stabil."},
-        "Kegunaan": "Pewarna merah pada kembang api dan suar, pasta gigi untuk gigi sensitif (Stronsium klorida)."
-    },
-    "Ba": {
-        "Informasi Dasar": {"Nama": "Barium", "Simbol": "Ba", "Nomor Atom": 56, "Massa Atom Relatif": 137.327, "Golongan": "IIA", "Periode": 6, "Konfigurasi Elektron": "[Xe] 6s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1774, "Valensi": 2, "Keelektronegatifan": 0.89, "Titik Didih": "1897 °C", "Titik Lebur": "727 °C"},
-        "Sifat Kimia & Fisik": {"pH Larutan": "Sangat Basa (Membentuk Ba(OH)2)", "Kelarutan (Air)": "Bereaksi sangat kuat dengan air", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Sangat reaktif, mudah teroksidasi, terbakar dengan nyala hijau apel."},
-        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu keperakan", "Massa Jenis": "3.51 g/cm³"},
-        "Kesehatan & Keselamatan": {"Toksisitas": "Tinggi (Terutama garam terlarutnya)", "Bahaya Kesehatan": "Garam barium terlarut beracun dan menyebabkan kram otot hingga gangguan jantung.", "Piktogram GHS": "🔥 (Mudah Terbakar), ☠️ (Beracun)", "Batas Paparan": "0.5 mg/m³."},
-        "Kegunaan": "Pewarna hijau pada kembang api, cairan kontras untuk rontgen saluran pencernaan (Barium sulfat), cairan pengeboran sumur minyak."
-    },
-    "Ra": {
-        "Informasi Dasar": {"Nama": "Radium", "Simbol": "Ra", "Nomor Atom": 88, "Massa Atom Relatif": 226, "Golongan": "IIA", "Periode": 7, "Konfigurasi Elektron": "[Rn] 7s²", "Kategori": "Logam Alkali Tanah", "Tahun Ditemukan": 1898, "Valensi": 2, "Keelektronegatifan": 0.9, "Titik Didih": "1140 °C (estimasi)", "Titik Lebur": "700 °C"},
-        "Sifat Kimia & Fisik": {"pH Larutan": "Sangat Basa (Membentuk Ra(OH)2)", "Kelarutan (Air)": "Bereaksi sangat kuat dengan air", "Kelarutan (Organik)": "Tidak larut", "Reaktivitas": "Secara kimia mirip dengan Barium, namun memancarkan radiasi alfa, beta, dan gamma."},
-        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan (bercahaya biru samar di kegelapan)", "Massa Jenis": "5.5 g/cm³"},
-        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Bahaya Kesehatan": "Penumpukan di dalam tulang memicu kanker tulang dan penyakit radiasi.", "Piktogram GHS": "☢️ (Radioaktif)", "Batas Paparan": "Diatur sangat ketat, fasilitas nuklir/medis khusus."},
-        "Kegunaan": "Pengobatan kanker (historis), cat bercahaya pada jam tangan kuno (kini dilarang karena mematikan)."
-    }
+        st.success(unsur_aktif["Kegunaan"])
