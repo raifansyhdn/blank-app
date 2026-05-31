@@ -194,6 +194,138 @@ unsur_data = {
     "In": {"Informasi Dasar": {"Nama": "Indium", "Nomor Atom": 49, "Kategori": "Logam Pasca-Transisi", "Massa Atom Relatif": 114.82, "Golongan": "IIIA", "Periode": 5, "Konfigurasi Elektron": "[Kr] 4d¹⁰ 5s² 5p¹", "Tahun Ditemukan": 1863}, "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat lembut, dapat dipotong dengan pisau dan meninggalkan 'jejak' di kertas"}, "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan mengkilap", "Massa Jenis": "7.31 g/cm³"}, "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Sedikit beracun, hindari konsumsi", "Batas Paparan": "0.1 mg/m³"}, "Kegunaan": "Lapisan konduktif transparan pada layar sentuh (LCD/OLED), solder khusus."},
     "Tl": {"Informasi Dasar": {"Nama": "Talium", "Nomor Atom": 81, "Kategori": "Logam Pasca-Transisi", "Massa Atom Relatif": 204.38, "Golongan": "IIIA", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹", "Tahun Ditemukan": 1861}, "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat reaktif di udara lembab, teroksidasi dengan cepat"}, "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan (menghitam di udara)", "Massa Jenis": "11.85 g/cm³"}, "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Tinggi", "Piktogram GHS": "☠️", "Bahaya Kesehatan": "Sangat beracun, menyebabkan rambut rontok dan kerusakan saraf fatal", "Batas Paparan": "0.1 mg/m³"}, "Kegunaan": "Elektronik optik inframerah, sebelumnya digunakan sebagai racun tikus (kini dilarang)."},
     "Nh": {"Informasi Dasar": {"Nama": "Nihonium", "Nomor Atom": 113, "Kategori": "Logam Pasca-Transisi (Superberat)", "Massa Atom Relatif": "286 (estimasi)", "Golongan": "IIIA", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹ (Diprediksi)", "Tahun Ditemukan": 2003}, "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi kurang reaktif dibanding unsur di atasnya"}, "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "16 g/cm³ (Diprediksi)"}, "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya radiasi murni", "Batas Paparan": "Tidak ada"}, "Kegunaan": "Hanya untuk keperluan penelitian ilmiah murni."},
+},
+# GOLONGAN IVA (14) - KELOMPOK KARBON
+    "C": {
+        "Informasi Dasar": {"Nama": "Karbon", "Nomor Atom": 6, "Kategori": "Non-logam", "Massa Atom Relatif": 12.011, "Golongan": "IVA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s² 2p²", "Tahun Ditemukan": "Zaman Kuno"},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Mampu membentuk rantai polimer panjang (dasar kehidupan organik)"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Hitam (Grafit) / Bening (Intan)", "Massa Jenis": "2.26 g/cm³ (Grafit)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Rendah", "Piktogram GHS": "✅", "Bahaya Kesehatan": "Aman, tetapi debu grafit dosis tinggi mengiritasi paru-paru", "Batas Paparan": "2 mg/m³ (debu)"},
+        "Kegunaan": "Intan perhiasan, pensil grafit, filter arang aktif, serat karbon otomotif."
+    },
+    "Si": {
+        "Informasi Dasar": {"Nama": "Silikon", "Nomor Atom": 14, "Kategori": "Metaloid", "Massa Atom Relatif": 28.085, "Golongan": "IVA", "Periode": 3, "Konfigurasi Elektron": "[Ne] 3s² 3p²", "Tahun Ditemukan": 1824},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Cukup lembam pada suhu kamar, larut dalam asam campuran"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu gelap mengkilap", "Massa Jenis": "2.33 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Inhalasi debu silika kronis menyebabkan Silikosis", "Batas Paparan": "0.025 mg/m³ (silika respirabel)"},
+        "Kegunaan": "Bahan utama cip komputer (mikroprosesor), panel surya, kaca, lem silikon."
+    },
+    "Ge": {
+        "Informasi Dasar": {"Nama": "Germanium", "Nomor Atom": 32, "Kategori": "Metaloid", "Massa Atom Relatif": 72.63, "Golongan": "IVA", "Periode": 4, "Konfigurasi Elektron": "[Ar] 3d¹⁰ 4s² 4p²", "Tahun Ditemukan": 1886},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Stabil di udara dan air, bereaksi dengan asam pekat"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keabu-abuan berkilau", "Massa Jenis": "5.32 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "✅", "Bahaya Kesehatan": "Tidak berbahaya secara industri", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Lensa optik inframerah (kamera malam), serat optik telekomunikasi, transistor."
+    },
+    "Sn": {
+        "Informasi Dasar": {"Nama": "Timah", "Nomor Atom": 50, "Kategori": "Logam Pasca-Transisi", "Massa Atom Relatif": 118.71, "Golongan": "IVA", "Periode": 5, "Konfigurasi Elektron": "[Kr] 4d¹⁰ 5s² 5p²", "Tahun Ditemukan": "Zaman Kuno"},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Tahan korosi air laut, tidak mudah teroksidasi"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih perak kemilau", "Massa Jenis": "7.31 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah (Logam)", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Senyawa timah organik bisa beracun bagi saraf", "Batas Paparan": "2 mg/m³"},
+        "Kegunaan": "Pelapis kaleng makanan anti-karat, kawat solder elektronik, logam perunggu."
+    },
+    "Pb": {
+        "Informasi Dasar": {"Nama": "Timbal", "Nomor Atom": 82, "Kategori": "Logam Pasca-Transisi", "Massa Atom Relatif": 207.2, "Golongan": "IVA", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²", "Tahun Ditemukan": "Zaman Kuno"},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat lambat bereaksi dengan asam sulfat dan klorida"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu kebiruan kusam", "Massa Jenis": "11.34 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Tinggi", "Piktogram GHS": "☠️, 🫁", "Bahaya Kesehatan": "Akumulasi logam berat merusak otak dan ginjal (Plumbisme)", "Batas Paparan": "0.05 mg/m³"},
+        "Kegunaan": "Aki kendaraan bermotor, pelindung radiasi sinar-X, beban pancing."
+    },
+    "Fl": {
+        "Informasi Dasar": {"Nama": "Flerovium", "Nomor Atom": 114, "Kategori": "Logam Pasca-Transisi (Superberat)", "Massa Atom Relatif": "289 (estimasi)", "Golongan": "IVA", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p² (Diprediksi)", "Tahun Ditemukan": 1998},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Diprediksi menunjukkan sifat gas mulia karena efek relativistik"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "14 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya radiasi tinggi", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Hanya untuk penelitian ilmiah dan fisika nuklir."
+    },
+
+    # GOLONGAN VA (15) - KELOMPOK NITROGEN (PNIKTOGEN)
+    "N": {
+        "Informasi Dasar": {"Nama": "Nitrogen", "Nomor Atom": 7, "Kategori": "Non-logam", "Massa Atom Relatif": 14.007, "Golongan": "VA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s² 2p³", "Tahun Ditemukan": 1772},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat tidak reaktif (inert) dalam wujud gas diatomik ($N_2$)"},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "1.25 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Non-toksik", "Piktogram GHS": "⚠️ (Gas bertekanan)", "Bahaya Kesehatan": "Dapat memicu asfiksia jika menggantikan oksigen di ruangan tertutup", "Batas Paparan": "Suhu kriogenik cair berbahaya bagi kulit"},
+        "Kegunaan": "Pupuk urea, pengawetan makanan kemasan, nitrogen cair pembeku medis."
+    },
+    "P": {
+        "Informasi Dasar": {"Nama": "Fosfor", "Nomor Atom": 15, "Kategori": "Non-logam", "Massa Atom Relatif": 30.974, "Golongan": "VA", "Periode": 3, "Konfigurasi Elektron": "[Ne] 3s² 3p³", "Tahun Ditemukan": 1669},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Fosfor putih sangat reaktif dan terbakar spontan di udara"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih kekuningan / Merah", "Massa Jenis": "1.82 g/cm³ (Fosfor putih)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Tinggi (Fosfor Putih)", "Piktogram GHS": "☠️, 🔥", "Bahaya Kesehatan": "Fosfor putih menyebabkan luka bakar parah dan nekrosis tulang rahang", "Batas Paparan": "0.1 mg/m³"},
+        "Kegunaan": "Kepala korek api (fosfor merah), pupuk fosfat, bahan peledak flare."
+    },
+    "As": {
+        "Informasi Dasar": {"Nama": "Arsenik", "Nomor Atom": 33, "Kategori": "Metaloid", "Massa Atom Relatif": 74.922, "Golongan": "VA", "Periode": 4, "Konfigurasi Elektron": "[Ar] 3d¹⁰ 4s² 4p³", "Tahun Ditemukan": "Zaman Kuno"},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Menyublim saat dipanaskan, membentuk senyawa arsen oksida beracun"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu metalik", "Massa Jenis": "5.73 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Tinggi", "Piktogram GHS": "☠️", "Bahaya Kesehatan": "Racun sistemik mematikan, karsinogenik kuat", "Batas Paparan": "0.01 mg/m³"},
+        "Kegunaan": "Pestisida pertanian (dulu), pengeras paduan timbal, semikonduktor."
+    },
+    "Sb": {
+        "Informasi Dasar": {"Nama": "Antimon", "Nomor Atom": 51, "Kategori": "Metaloid", "Massa Atom Relatif": 121.76, "Golongan": "VA", "Periode": 5, "Konfigurasi Elektron": "[Kr] 4d¹⁰ 5s² 5p³", "Tahun Ditemukan": "Zaman Kuno"},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Lambat diserang asam encer, bereaksi cepat dengan halogen"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu perak berkilau", "Massa Jenis": "6.69 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sedang - Tinggi", "Piktogram GHS": "☠️", "Bahaya Kesehatan": "Iritasi parah pada saluran pernapasan dan kulit", "Batas Paparan": "0.5 mg/m³"},
+        "Kegunaan": "Bahan penghambat api (flame retardant), pengeras peluru, dioda elektronik."
+    },
+    "Bi": {
+        "Informasi Dasar": {"Nama": "Bismut", "Nomor Atom": 83, "Kategori": "Logam Pasca-Transisi", "Massa Atom Relatif": 208.98, "Golongan": "VA", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³", "Tahun Ditemukan": "Zaman Kuno"},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Logam berat paling aman, lambat teroksidasi di udara membentuk lapisan warna-warni"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan dengan semburat merah muda", "Massa Jenis": "9.78 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Rendah", "Piktogram GHS": "✅", "Bahaya Kesehatan": "Aman digunakan, toksisitas terendah dibanding tetangganya", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Bahan aktif obat sakit perut (Pepto-Bismol), kosmetik, pengganti timbal ramah lingkungan."
+    },
+    "Mc": {
+        "Informasi Dasar": {"Nama": "Moscovium", "Nomor Atom": 115, "Kategori": "Logam Pasca-Transisi (Superberat)", "Massa Atom Relatif": "290 (estimasi)", "Golongan": "VA", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³ (Diprediksi)", "Tahun Ditemukan": 2003},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sifat kimia belum banyak diketahui karena kelimpahan atom yang sangat sedikit"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "13.5 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Risiko kerusakan radiasi ekstrem", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Hanya untuk kepentingan studi ilmiah laboratorium fisika partikel."
+    },
+
+    # GOLONGAN VIA (16) - KELOMPOK OKSIGEN (KALKOGEN)
+    "O": {
+        "Informasi Dasar": {"Nama": "Oksigen", "Nomor Atom": 8, "Kategori": "Non-logam", "Massa Atom Relatif": 15.999, "Golongan": "VIA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s² 2p⁴", "Tahun Ditemukan": 1774},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat reaktif, agen pengoksidasi kuat, mendukung pembakaran"},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "1.43 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Esensial", "Piktogram GHS": "🔥 (Oksidator)", "Bahaya Kesehatan": "Oksigen murni 100% pada tekanan tinggi dapat memicu toksisitas paru", "Batas Paparan": "Kondisi atmosferik normal aman"},
+        "Kegunaan": "Respirasi makhluk hidup, tabung medis rumah sakit, las oksiasetilen, bahan bakar roket."
+    },
+    "S": {
+        "Informasi Dasar": {"Nama": "Belerang (Sulfur)", "Nomor Atom": 16, "Kategori": "Non-logam", "Massa Atom Relatif": 32.06, "Golongan": "VIA", "Periode": 3, "Konfigurasi Elektron": "[Ne] 3s² 3p⁴", "Tahun Ditemukan": "Zaman Kuno"},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Terbakar menghasilkan gas belerang dioksida berbau menyengat"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Kuning lemon terang", "Massa Jenis": "2.07 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Debunya mengiritasi mata, senyawanya ($H_2S$) sangat beracun", "Batas Paparan": "Tidak ada batas ketat logam murni"},
+        "Kegunaan": "Bahan baku asam sulfat, vulkanisasi karet ban, obat jerawat kulit, bubuk mesiu."
+    },
+    "Se": {
+        "Informasi Dasar": {"Nama": "Selenium", "Nomor Atom": 34, "Kategori": "Non-logam", "Massa Atom Relatif": 78.971, "Golongan": "VIA", "Periode": 4, "Konfigurasi Elektron": "[Ar] 3d¹⁰ 4s² 4p⁴", "Tahun Ditemukan": 1817},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Bersifat fotokonduktif (menghantarkan listrik lebih baik saat terkena cahaya)"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu metalik / Merah", "Massa Jenis": "4.81 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sedang", "Piktogram GHS": "☠️", "Bahaya Kesehatan": "Mikronutrien penting, tetapi kelebihan memicu keracunan (Selenosis)", "Batas Paparan": "0.2 mg/m³"},
+        "Kegunaan": "Mesin fotokopi tua, kaca penangkal radiasi matahari, sampo anti ketombe (Selenium sulfida)."
+    },
+    "Te": {
+        "Informasi Dasar": {"Nama": "Telurium", "Nomor Atom": 52, "Kategori": "Metaloid", "Massa Atom Relatif": 127.6, "Golongan": "VIA", "Periode": 5, "Konfigurasi Elektron": "[Kr] 4d¹⁰ 5s² 5p⁴", "Tahun Ditemukan": 1782},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sedikit reaktif, terbakar dengan nyala api hijau-biru"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan berkilau mika", "Massa Jenis": "6.24 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sedang", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Paparan kronis menyebabkan napas dan keringat berbau bawang putih tajam", "Batas Paparan": "0.1 mg/m³"},
+        "Kegunaan": "Campuran logam baja agar mudah dipotong, panel surya CdTe termutakhir."
+    },
+    "Po": {
+        "Informasi Dasar": {"Nama": "Polonium", "Nomor Atom": 84, "Kategori": "Metaloid", "Massa Atom Relatif": "209 (estimasi)", "Golongan": "VIA", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴", "Tahun Ditemukan": 1898},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat volatil, melepaskan energi panas tinggi akibat peluruhan radiasi alfa"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "9.20 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Ekstrem", "Piktogram GHS": "☢️, ☠️", "Bahaya Kesehatan": "Salah satu zat paling mematikan di dunia dalam jumlah mikrogram", "Batas Paparan": "Hanya di fasilitas nuklir militer"},
+        "Kegunaan": "Pembangkit listrik satelit luar angkasa (RTG), sikat pembersih debu film statis."
+    },
+    "Lv": {
+        "Informasi Dasar": {"Nama": "Livermorium", "Nomor Atom": 116, "Kategori": "Logam Pasca-Transisi (Superberat)", "Massa Atom Relatif": "293 (estimasi)", "Golongan": "VIA", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴ (Diprediksi)", "Tahun Ditemukan": 2000},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Waktu paruh sangat singkat (sekitar 60 milidetik), sifat kimia teoretis"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "12.9 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya radiasi ionisasi mematikan", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Hanya digunakan untuk penelitian sintesis unsur superberat baru."
+    },
 }
 st.title("Tabel Periodik Unsur Kimia Interaktif ⚛️")
 st.write("Klik pada unsur yang tersedia (warna dapat diklik) untuk melihat detailnya di bagian bawah.")
