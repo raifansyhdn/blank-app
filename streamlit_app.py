@@ -420,6 +420,219 @@ unsur_data = {
         "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Hanya meluruh dalam ukuran milidetik", "Batas Paparan": "Tidak ada"},
         "Kegunaan": "Menyelesaikan periode 7 pada tabel periodik modern, murni untuk penelitian ilmiah."
     },
+# BLOK-F: LANTANIDA
+    "La": {
+        "Informasi Dasar": {"Nama": "Lantanum", "Nomor Atom": 57, "Kategori": "Lantanida", "Massa Atom Relatif": 138.91, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 5d¹ 6s²", "Tahun Ditemukan": 1839},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Cukup reaktif, teroksidasi perlahan di udara membentuk lantanum oksida"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "6.16 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Debunya dapat mengiritasi paru-paru jika terhirup", "Batas Paparan": "Belum ditentukan secara ketat"},
+        "Kegunaan": "Kaca lensa optik kualitas tinggi (kamera/teleskop), batu pemantik api, paduan baterai hibrida."
+    },
+    "Ce": {
+        "Informasi Dasar": {"Nama": "Serium", "Nomor Atom": 58, "Kategori": "Lantanida", "Massa Atom Relatif": 140.12, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹ 5d¹ 6s²", "Tahun Ditemukan": 1803},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Lantanida yang paling reaktif, mudah memercikkan api jika tergores"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "6.77 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Paparan kronis dapat menyebabkan gatal dan lesi kulit", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Katalis pada konverter gas buang mobil, pemantik api (ferrocerium), serbuk pemoles kaca."
+    },
+    "Pr": {
+        "Informasi Dasar": {"Nama": "Praseodimium", "Nomor Atom": 59, "Kategori": "Lantanida", "Massa Atom Relatif": 140.91, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f³ 6s²", "Tahun Ditemukan": 1885},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Bereaksi lambat dengan oksigen, membentuk lapisan oksida hijau yang rapuh"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan pucat", "Massa Jenis": "6.77 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Iritasi ringan pada kulit dan mata", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Kacamata pelindung tukang las (kaca didymium), paduan magnet kekuatan tinggi."
+    },
+    "Nd": {
+        "Informasi Dasar": {"Nama": "Neodimium", "Nomor Atom": 60, "Kategori": "Lantanida", "Massa Atom Relatif": 144.24, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f⁴ 6s²", "Tahun Ditemukan": 1885},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Ternoda di udara, membutuhkan lapisan pelindung agar tidak hancur"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "7.01 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Debunya sangat mudah terbakar dan menyebabkan iritasi mata", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Magnet terkuat di dunia (motor listrik, hard drive, headphone, turbin angin)."
+    },
+    "Pm": {
+        "Informasi Dasar": {"Nama": "Prometium", "Nomor Atom": 61, "Kategori": "Lantanida", "Massa Atom Relatif": "145 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f⁵ 6s²", "Tahun Ditemukan": 1945},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Satu-satunya unsur lantanida yang sangat radioaktif dan tidak memiliki isotop stabil"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Logam metalik (memancarkan cahaya biru-hijau karena radiasi)", "Massa Jenis": "7.26 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Tinggi (Radioaktif)", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya radiasi beta, merusak sel tubuh jika tertelan", "Batas Paparan": "Sangat dikontrol ketat"},
+        "Kegunaan": "Baterai nuklir jangka panjang untuk wahana antariksa dan pacu jantung buatan (dulu)."
+    },
+    "Sm": {
+        "Informasi Dasar": {"Nama": "Samarium", "Nomor Atom": 62, "Kategori": "Lantanida", "Massa Atom Relatif": 150.36, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f⁶ 6s²", "Tahun Ditemukan": 1879},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Ternoda di udara dan terbakar secara spontan pada suhu 150°C"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "7.52 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Dapat mengiritasi selaput lendir", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Magnet SmCo (Samarium-Kobalt) yang tahan suhu tinggi, obat pereda nyeri kanker tulang."
+    },
+    "Eu": {
+        "Informasi Dasar": {"Nama": "Europium", "Nomor Atom": 63, "Kategori": "Lantanida", "Massa Atom Relatif": 151.96, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f⁷ 6s²", "Tahun Ditemukan": 1901},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Lantanida paling reaktif, langsung bereaksi dengan air mirip kalsium"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan (cepat kusam di udara)", "Massa Jenis": "5.26 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Serbuk logamnya bahaya kebakaran ekstrem", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Fosfor merah dan biru pada layar TV/Monitor, fitur anti-pemalsuan pada uang kertas Euro."
+    },
+    "Gd": {
+        "Informasi Dasar": {"Nama": "Gadolinium", "Nomor Atom": 64, "Kategori": "Lantanida", "Massa Atom Relatif": 157.25, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f⁷ 5d¹ 6s²", "Tahun Ditemukan": 1880},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat reaktif pada suhu tinggi, bersifat feromagnetik pada suhu dingin (< 20°C)"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "7.90 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sedang", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Dalam bentuk bebas cukup beracun, aman dalam bentuk kelat (senyawa terikat) untuk medis", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Agen kontras untuk pemindaian MRI medis, batang pengendali reaktor nuklir."
+    },
+    "Tb": {
+        "Informasi Dasar": {"Nama": "Terbium", "Nomor Atom": 65, "Kategori": "Lantanida", "Massa Atom Relatif": 158.93, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f⁹ 6s²", "Tahun Ditemukan": 1843},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Cukup stabil di udara, memancarkan cahaya hijau terang (berpendar) bila disinari elektron"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan pucat", "Massa Jenis": "8.23 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Mirip lantanida lainnya, debunya iritatif", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Fosfor hijau di lampu neon/layar, sonar laut dalam, paduan memori bentuk."
+    },
+    "Dy": {
+        "Informasi Dasar": {"Nama": "Disprosium", "Nomor Atom": 66, "Kategori": "Lantanida", "Massa Atom Relatif": 162.50, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹⁰ 6s²", "Tahun Ditemukan": 1886},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Mudah teroksidasi oleh udara dan air pada suhu tinggi"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Logam keperakan mengkilap", "Massa Jenis": "8.54 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Menimbulkan iritasi jika masuk ke pernapasan", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Campuran pembuat magnet neodymium tahan panas (untuk turbin/mobil listrik), sistem pendingin laser."
+    },
+    "Ho": {
+        "Informasi Dasar": {"Nama": "Holmium", "Nomor Atom": 67, "Kategori": "Lantanida", "Massa Atom Relatif": 164.93, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹¹ 6s²", "Tahun Ditemukan": 1878},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Memiliki momen magnetik paling tinggi dari semua unsur di alam"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "8.79 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Diyakini memiliki tingkat toksisitas akut yang rendah", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Pusat kutub magnet buatan terkuat, laser bedah mata dan gigi."
+    },
+    "Er": {
+        "Informasi Dasar": {"Nama": "Erbium", "Nomor Atom": 68, "Kategori": "Lantanida", "Massa Atom Relatif": 167.26, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹² 6s²", "Tahun Ditemukan": 1843},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Stabil secara kimia, oksidanya berwarna merah muda khas"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "9.07 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Debunya berpotensi membakar ringan di mata", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Penguat sinyal kabel serat optik bawah laut, laser kosmetik kulit, kaca penyerap inframerah."
+    },
+    "Tm": {
+        "Informasi Dasar": {"Nama": "Tulium", "Nomor Atom": 69, "Kategori": "Lantanida", "Massa Atom Relatif": 168.93, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹³ 6s²", "Tahun Ditemukan": 1879},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Paling tidak melimpah dari lantanida alami, perlahan bereaksi dengan air"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan terang", "Massa Jenis": "9.32 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Sangat sedikit info racunnya, ditangani hati-hati secara industri", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Mesin sinar-X portabel kecil tanpa listrik (menggunakan isotop radioaktifnya), laser operasi presisi."
+    },
+    "Yb": {
+        "Informasi Dasar": {"Nama": "Iterbium", "Nomor Atom": 70, "Kategori": "Lantanida", "Massa Atom Relatif": 173.05, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹⁴ 6s²", "Tahun Ditemukan": 1878},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Cukup reaktif, disimpan dalam wadah tertutup kedap udara"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan pucat pucat", "Massa Jenis": "6.90 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah-Sedang", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Menyebabkan iritasi pada kulit dan paru-paru jika tertelan debunya", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Paduan baja anti karat, sensor pendeteksi getaran gempa, bahan pembuat jam atom presisi."
+    },
+    "Lu": {
+        "Informasi Dasar": {"Nama": "Lutetium", "Nomor Atom": 71, "Kategori": "Lantanida", "Massa Atom Relatif": 174.97, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹⁴ 5d¹ 6s²", "Tahun Ditemukan": 1907},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Elemen lantanida paling berat dan paling keras"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "9.84 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Tingkat toksisitas diperkirakan rendah", "Batas Paparan": "Belum ditentukan"},
+        "Kegunaan": "Katalis proses pemurnian minyak bumi, bahan pemindai PET (Positron Emission Tomography) medis."
+    },
+
+    # BLOK-F: AKTINIDA
+    "Ac": {
+        "Informasi Dasar": {"Nama": "Aktinium", "Nomor Atom": 89, "Kategori": "Aktinida", "Massa Atom Relatif": "227 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 6d¹ 7s²", "Tahun Ditemukan": 1899},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat reaktif dengan udara membentuk lapisan putih zink-oksida seperti aktinium oksida"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan (Bercahaya biru karena radiasi)", "Massa Jenis": "10.0 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Ekstrem (Radioaktif)", "Piktogram GHS": "☢️, ☠️", "Bahaya Kesehatan": "Bahaya radiasi setara radium, mematikan jika terhirup atau tertelan", "Batas Paparan": "Fasilitas Nuklir Khusus"},
+        "Kegunaan": "Terapi radiasi mutakhir untuk pengobatan kanker tulang dan organ (Targeted Alpha Therapy)."
+    },
+    "Th": {
+        "Informasi Dasar": {"Nama": "Torium", "Nomor Atom": 90, "Kategori": "Aktinida", "Massa Atom Relatif": 232.04, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 6d² 7s²", "Tahun Ditemukan": 1829},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Lemah secara radioaktif, perlahan menghitam di udara karena oksida"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "11.7 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Tinggi (Radioaktif & Kimiawi)", "Piktogram GHS": "☢️, ☠️", "Bahaya Kesehatan": "Debu torium memicu kanker paru dan merusak tulang, serta liver", "Batas Paparan": "Sangat Dibatasi"},
+        "Kegunaan": "Potensi besar sebagai bahan bakar reaktor nuklir generasi masa depan (LFTR), kaca lensa tahan panas."
+    },
+    "Pa": {
+        "Informasi Dasar": {"Nama": "Protaktinium", "Nomor Atom": 91, "Kategori": "Aktinida", "Massa Atom Relatif": 231.04, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f² 6d¹ 7s²", "Tahun Ditemukan": 1913},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Logam yang sangat langka dan mahal, bersinar kuat secara radiologi"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan terang mengkilap", "Massa Jenis": "15.37 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Ekstrem (Sangat Radioaktif)", "Piktogram GHS": "☢️, ☠️", "Bahaya Kesehatan": "Tingkat radiasi mematikan dan bersifat akumulatif di tubuh", "Batas Paparan": "Fasilitas Nuklir Tertutup"},
+        "Kegunaan": "Sebagian besar murni untuk penelitian ilmiah fundamental tentang fisika bumi purba."
+    },
+    "U": {
+        "Informasi Dasar": {"Nama": "Uranium", "Nomor Atom": 92, "Kategori": "Aktinida", "Massa Atom Relatif": 238.03, "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f³ 6d¹ 7s²", "Tahun Ditemukan": 1789},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Dapat pecah (fisi) ketika ditembak dengan neutron, melepaskan energi luar biasa besar"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Abu-abu baja keperakan", "Massa Jenis": "19.05 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Tinggi (Beracun & Radioaktif)", "Piktogram GHS": "☢️, ☠️", "Bahaya Kesehatan": "Paparan radiasi dan keracunan logam berat yang menyebabkan gagal ginjal fatal", "Batas Paparan": "Regulasi ketat militer/energi"},
+        "Kegunaan": "Bahan bakar utama Pembangkit Listrik Tenaga Nuklir (PLTN), amunisi penembus baja (depleted uranium), hulu ledak militer."
+    },
+    "Np": {
+        "Informasi Dasar": {"Nama": "Neptunium", "Nomor Atom": 93, "Kategori": "Aktinida", "Massa Atom Relatif": "237 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f⁴ 6d¹ 7s²", "Tahun Ditemukan": 1940},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Unsur sintesis radioaktif, membentuk berbagai tingkat oksidasi"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan", "Massa Jenis": "20.45 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Ekstrem (Radioaktif)", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Mengendap di dalam tulang dan menyebarkan radiasi fatal internal", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Digunakan sebagai bahan pendeteksi partikel neutron tingkat tinggi, bahan antara produksi Plutonium."
+    },
+    "Pu": {
+        "Informasi Dasar": {"Nama": "Plutonium", "Nomor Atom": 94, "Kategori": "Aktinida", "Massa Atom Relatif": "244 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f⁶ 7s²", "Tahun Ditemukan": 1940},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Logam buatan manusia, memanas sendiri dengan melepaskan radiasi partikel alfa"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih perak terang", "Massa Jenis": "19.82 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Ekstrem (Sangat Radioaktif & Karsinogenik)", "Piktogram GHS": "☢️, ☠️", "Bahaya Kesehatan": "Sangat beracun, ukuran debu mikroskopis dapat menyebabkan kanker yang mematikan", "Batas Paparan": "Fasilitas Pertahanan & Luar Angkasa"},
+        "Kegunaan": "Hulu ledak senjata nuklir utama, baterai abadi penjelajah planet luar angkasa (seperti rovers Mars)."
+    },
+    "Am": {
+        "Informasi Dasar": {"Nama": "Amerisium", "Nomor Atom": 95, "Kategori": "Aktinida", "Massa Atom Relatif": "243 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f⁷ 7s²", "Tahun Ditemukan": 1944},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Logam radioaktif buatan sintetik, bereaksi lambat dengan air atau asam"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "12.0 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Tinggi (Radioaktif)", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Terkunci dalam casing aman untuk komersial, sangat berbahaya jika menelan logam murni", "Batas Paparan": "Diatur Ketat"},
+        "Kegunaan": "Satu-satunya unsur sintetis di rumah (digunakan di dalam detektor asap rumah tangga komersial)."
+    },
+    "Cm": {
+        "Informasi Dasar": {"Nama": "Kurium", "Nomor Atom": 96, "Kategori": "Aktinida", "Massa Atom Relatif": "247 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f⁷ 6d¹ 7s²", "Tahun Ditemukan": 1944},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat radioaktif, melepaskan energi sangat tinggi yang memancarkan pendaran merah/ungu"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan pucat", "Massa Jenis": "13.51 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Ekstrem (Radioaktif)", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Mengancam nyawa, kerusakan jaringan berat karena partikel alfa", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Tenaga listrik termoelektrik untuk ruang angkasa, sumber partikel spektrometer X-Ray Alpha."
+    },
+    "Bk": {
+        "Informasi Dasar": {"Nama": "Berkelium", "Nomor Atom": 97, "Kategori": "Aktinida", "Massa Atom Relatif": "247 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f⁹ 7s²", "Tahun Ditemukan": 1949},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Memiliki umur peluruhan sedang hingga lambat, dibuat khusus melalui pemboman neutron"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan (Diprediksi)", "Massa Jenis": "14.78 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya radiasi ekstrem", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Bahan target khusus untuk memproduksi (mensintesis) unsur-unsur yang lebih berat."
+    },
+    "Cf": {
+        "Informasi Dasar": {"Nama": "Kalifornium", "Nomor Atom": 98, "Kategori": "Aktinida", "Massa Atom Relatif": "251 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁰ 7s²", "Tahun Ditemukan": 1950},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Pemancar neutron terkuat yang bisa diandalkan, logam sangat padat dan mahal"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Keperakan", "Massa Jenis": "15.1 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Ekstrem (Sangat Radioaktif)", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Menyebabkan kerusakan sumsum tulang fatal", "Batas Paparan": "Ditangani pakai robot"},
+        "Kegunaan": "Deteksi lapisan minyak atau kandungan perak/emas dalam tanah, terapi kanker otak radiasi tinggi."
+    },
+    "Es": {
+        "Informasi Dasar": {"Nama": "Einsteinium", "Nomor Atom": 99, "Kategori": "Aktinida", "Massa Atom Relatif": "252 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹¹ 7s²", "Tahun Ditemukan": 1952},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Ditemukan pertama kali dari sisa-sisa ledakan bom hidrogen pertama di dunia"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Metalik (Memancarkan cahaya kuat)", "Massa Jenis": "8.84 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Radiasi destruktif dalam hitungan detik", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Riset fisika elementer saja."
+    },
+    "Fm": {
+        "Informasi Dasar": {"Nama": "Fermium", "Nomor Atom": 100, "Kategori": "Aktinida", "Massa Atom Relatif": "257 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹² 7s²", "Tahun Ditemukan": 1952},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Elemen terberat yang pernah dibentuk oleh tumbukan partikel reaktor nuklir normal"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Tidak diketahui", "Massa Jenis": "Belum ditentukan"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya radiasi fatal", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Eksperimen murni ilmu pengetahuan alam."
+    },
+    "Md": {
+        "Informasi Dasar": {"Nama": "Mendelevium", "Nomor Atom": 101, "Kategori": "Aktinida", "Massa Atom Relatif": "258 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹³ 7s²", "Tahun Ditemukan": 1955},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Elemen pertama yang disintesis dari atom satu-per-satu di laboratorium akselerator partikel"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Tidak diketahui", "Massa Jenis": "Belum ditentukan"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya tinggi radiasi dan toksisitas akut", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Studi kimia dan fisika lanjut."
+    },
+    "No": {
+        "Informasi Dasar": {"Nama": "Nobelium", "Nomor Atom": 102, "Kategori": "Aktinida", "Massa Atom Relatif": "259 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 7s²", "Tahun Ditemukan": 1966},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat tidak stabil secara atomik, mudah mengalami fisi atau peluruhan partikel alfa"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Tidak diketahui", "Massa Jenis": "Belum ditentukan"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya fisi dan radiasi intens tinggi", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Hanya eksperimen ilmiah teoritis."
+    },
+    "Lr": {
+        "Informasi Dasar": {"Nama": "Lawrensium", "Nomor Atom": 103, "Kategori": "Aktinida", "Massa Atom Relatif": "266 (estimasi)", "Golongan": "Golongan 3 (Transisi Dalam)", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 7s² 7p¹", "Tahun Ditemukan": 1961},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Anggota terakhir dari seri aktinida dan elemen blok-f terberat"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Tidak diketahui", "Massa Jenis": "16.1 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Pemancar alfa destruktif, hanya diproduksi sebagian fraksi atom", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Penelitian ilmiah untuk membuktikan model batas-batas fisika tabel periodik."
+    },
 }
 st.title("Tabel Periodik Unsur Kimia Interaktif ⚛️")
 st.write("Klik pada unsur yang tersedia (warna dapat diklik) untuk melihat detailnya di bagian bawah.")
