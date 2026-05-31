@@ -175,7 +175,6 @@ unsur_data = {
         "Kegunaan": "Memperluas pemahaman manusia tentang nukleus dan tabel periodik."
     },
 }
-
 st.title("Tabel Periodik Unsur Kimia Interaktif ⚛️")
 st.write("Klik pada unsur yang tersedia (warna dapat diklik) untuk melihat detailnya di bagian bawah.")
 
