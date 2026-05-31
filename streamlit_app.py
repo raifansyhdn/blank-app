@@ -326,6 +326,100 @@ unsur_data = {
         "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya radiasi ionisasi mematikan", "Batas Paparan": "Tidak ada"},
         "Kegunaan": "Hanya digunakan untuk penelitian sintesis unsur superberat baru."
     },
+# GOLONGAN VIIA (17) - HALOGEN
+    "F": {
+        "Informasi Dasar": {"Nama": "Fluor", "Nomor Atom": 9, "Kategori": "Non-logam (Halogen)", "Massa Atom Relatif": 18.998, "Golongan": "VIIA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s² 2p⁵", "Tahun Ditemukan": 1886},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Unsur paling reaktif dan elektronegatif, bereaksi dengan hampir semua elemen"},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Kuning pucat", "Massa Jenis": "1.696 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Tinggi", "Piktogram GHS": "☠️, 🔥", "Bahaya Kesehatan": "Gasnya sangat beracun dan korosif", "Batas Paparan": "0.1 ppm"},
+        "Kegunaan": "Pasta gigi (mencegah karies), pelapis anti-lengket (Teflon), pendingin freon."
+    },
+    "Cl": {
+        "Informasi Dasar": {"Nama": "Klorin", "Nomor Atom": 17, "Kategori": "Non-logam (Halogen)", "Massa Atom Relatif": 35.45, "Golongan": "VIIA", "Periode": 3, "Konfigurasi Elektron": "[Ne] 3s² 3p⁵", "Tahun Ditemukan": 1774},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat reaktif, agen pengoksidasi yang kuat"},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Kuning kehijauan", "Massa Jenis": "3.2 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Tinggi", "Piktogram GHS": "☠️, ⚠️", "Bahaya Kesehatan": "Iritasi parah pada sistem pernapasan, beracun jika terhirup", "Batas Paparan": "0.5 ppm"},
+        "Kegunaan": "Disinfektan air minum dan kolam renang, pemutih pakaian, pembuatan plastik PVC."
+    },
+    "Br": {
+        "Informasi Dasar": {"Nama": "Bromin", "Nomor Atom": 35, "Kategori": "Non-logam (Halogen)", "Massa Atom Relatif": 79.904, "Golongan": "VIIA", "Periode": 4, "Konfigurasi Elektron": "[Ar] 3d¹⁰ 4s² 4p⁵", "Tahun Ditemukan": 1826},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Satu-satunya unsur non-logam yang cair pada suhu ruang"},
+        "Wujud Fisik": {"Wujud (25°C)": "Cair", "Warna": "Merah kecoklatan", "Massa Jenis": "3.10 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Tinggi", "Piktogram GHS": "☠️, 🫁", "Bahaya Kesehatan": "Uapnya sangat mengiritasi mata dan paru-paru", "Batas Paparan": "0.1 ppm"},
+        "Kegunaan": "Bahan anti-api (flame retardant), disinfektan kolam, fotografi film (AgBr)."
+    },
+    "I": {
+        "Informasi Dasar": {"Nama": "Iodin (Yodium)", "Nomor Atom": 53, "Kategori": "Non-logam (Halogen)", "Massa Atom Relatif": 126.90, "Golongan": "VIIA", "Periode": 5, "Konfigurasi Elektron": "[Kr] 4d¹⁰ 5s² 5p⁵", "Tahun Ditemukan": 1811},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Halogen paling tidak reaktif yang stabil, menyublim menjadi gas ungu"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Ungu kehitaman mengkilap", "Massa Jenis": "4.93 g/cm³"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Rendah (Esensial)", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Penting untuk tiroid, tetapi beracun dalam dosis sangat tinggi", "Batas Paparan": "0.1 ppm"},
+        "Kegunaan": "Antiseptik luka (Betadine), suplemen garam beryodium, pewarna kontras medis."
+    },
+    "At": {
+        "Informasi Dasar": {"Nama": "Astatin", "Nomor Atom": 85, "Kategori": "Metaloid (Halogen)", "Massa Atom Relatif": "210 (estimasi)", "Golongan": "VIIA", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵", "Tahun Ditemukan": 1940},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sifat kimia mirip iodin tetapi jauh lebih radioaktif dan langka"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Hitam metalik (Diprediksi)", "Massa Jenis": "7 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Bahaya paparan radiasi", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Riset terapi radiasi alfa untuk mengobati kanker (masih eksperimental)."
+    },
+    "Ts": {
+        "Informasi Dasar": {"Nama": "Tenesin", "Nomor Atom": 117, "Kategori": "Logam Pasca-Transisi (Superberat)", "Massa Atom Relatif": "294 (estimasi)", "Golongan": "VIIA", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵ (Diprediksi)", "Tahun Ditemukan": 2010},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Waktu paruh sepersekian detik, sifat diprediksi mirip logam bukan halogen biasa"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Metalik (Diprediksi)", "Massa Jenis": "7.2 g/cm³ (Diprediksi)"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Radiasi ekstrem", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Hanya eksperimen ilmiah laboratorium."
+    },
+
+    # GOLONGAN VIIIA (18) - GAS MULIA
+    "He": {
+        "Informasi Dasar": {"Nama": "Helium", "Nomor Atom": 2, "Kategori": "Gas Mulia", "Massa Atom Relatif": 4.0026, "Golongan": "VIIIA", "Periode": 1, "Konfigurasi Elektron": "1s²", "Tahun Ditemukan": 1868},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat inert (tidak reaktif), titik didih paling rendah dari semua unsur"},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "0.1786 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Non-toksik", "Piktogram GHS": "⚠️ (Gas bertekanan)", "Bahaya Kesehatan": "Dapat menyebabkan asfiksia jika terhirup menggantikan oksigen", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Pengisi balon udara/pesta, pendingin magnet superkonduktor MRI, gas pernapasan penyelam laut dalam."
+    },
+    "Ne": {
+        "Informasi Dasar": {"Nama": "Neon", "Nomor Atom": 10, "Kategori": "Gas Mulia", "Massa Atom Relatif": 20.180, "Golongan": "VIIIA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s² 2p⁶", "Tahun Ditemukan": 1898},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Inert secara kimia, berpendar merah oranye terang jika dialiri listrik"},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "0.900 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Non-toksik", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Asfiksian ringan", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Papan reklame terang (Lampu Neon), laser gas, indikator tegangan tinggi."
+    },
+    "Ar": {
+        "Informasi Dasar": {"Nama": "Argon", "Nomor Atom": 18, "Kategori": "Gas Mulia", "Massa Atom Relatif": 39.948, "Golongan": "VIIIA", "Periode": 3, "Konfigurasi Elektron": "[Ne] 3s² 3p⁶", "Tahun Ditemukan": 1894},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Inert, kelimpahan cukup tinggi di atmosfer bumi (hampir 1%)"},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "1.784 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Non-toksik", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Asfiksian di ruang tertutup", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Gas pelindung pada pengelasan (TIG/MIG), pengisi bohlam lampu pijar."
+    },
+    "Kr": {
+        "Informasi Dasar": {"Nama": "Kripton", "Nomor Atom": 36, "Kategori": "Gas Mulia", "Massa Atom Relatif": 83.798, "Golongan": "VIIIA", "Periode": 4, "Konfigurasi Elektron": "[Ar] 3d¹⁰ 4s² 4p⁶", "Tahun Ditemukan": 1898},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Umumnya inert, tetapi bisa membentuk beberapa senyawa dengan fluorin pada kondisi ekstrem"},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "3.749 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Non-toksik", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Asfiksian ringan", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Lampu flash fotografi kecepatan tinggi, lampu neon putih-kuning pendar bandara."
+    },
+    "Xe": {
+        "Informasi Dasar": {"Nama": "Xenon", "Nomor Atom": 54, "Kategori": "Gas Mulia", "Massa Atom Relatif": 131.29, "Golongan": "VIIIA", "Periode": 5, "Konfigurasi Elektron": "[Kr] 4d¹⁰ 5s² 5p⁶", "Tahun Ditemukan": 1898},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Mampu membentuk senyawa kimia stabil pertama dari gas mulia (misal: Xenon heksafluorida)"},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "5.894 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Non-toksik", "Piktogram GHS": "⚠️", "Bahaya Kesehatan": "Asfiksian ringan", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Lampu proyektor bioskop, lampu depan mobil kelas atas (HID), anestesi medis khusus."
+    },
+    "Rn": {
+        "Informasi Dasar": {"Nama": "Radon", "Nomor Atom": 86, "Kategori": "Gas Mulia", "Massa Atom Relatif": "222 (estimasi)", "Golongan": "VIIIA", "Periode": 6, "Konfigurasi Elektron": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶", "Tahun Ditemukan": 1899},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Gas mulia yang sangat radioaktif, hasil peluruhan uranium/radium di tanah"},
+        "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "9.73 g/L"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Karsinogenik (Radioaktif)", "Piktogram GHS": "☢️, ☠️", "Bahaya Kesehatan": "Penyebab utama kedua kanker paru-paru setelah merokok jika terakumulasi di basement", "Batas Paparan": "Serendah mungkin (4 pCi/L batas aksi US EPA)"},
+        "Kegunaan": "Terapi radiasi kanker (dulu, sekarang diganti yang lebih aman), pelacakan kebocoran geologis."
+    },
+    "Og": {
+        "Informasi Dasar": {"Nama": "Oganeson", "Nomor Atom": 118, "Kategori": "Gas Mulia (Superberat)", "Massa Atom Relatif": "294 (estimasi)", "Golongan": "VIIIA", "Periode": 7, "Konfigurasi Elektron": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (Diprediksi)", "Tahun Ditemukan": 2002},
+        "Sifat Kimia & Fisik": {"Reaktivitas": "Efek relativistik mungkin membuatnya berwujud padat dan cukup reaktif (tidak inert seperti gas mulia lainnya)"},
+        "Wujud Fisik": {"Wujud (25°C)": "Padat (Diprediksi)", "Warna": "Tidak diketahui", "Massa Jenis": "Tidak diketahui"},
+        "Kesehatan & Keselamatan": {"Toksisitas": "Sangat Radioaktif", "Piktogram GHS": "☢️", "Bahaya Kesehatan": "Hanya meluruh dalam ukuran milidetik", "Batas Paparan": "Tidak ada"},
+        "Kegunaan": "Menyelesaikan periode 7 pada tabel periodik modern, murni untuk penelitian ilmiah."
+    },
 }
 st.title("Tabel Periodik Unsur Kimia Interaktif ⚛️")
 st.write("Klik pada unsur yang tersedia (warna dapat diklik) untuk melihat detailnya di bagian bawah.")
