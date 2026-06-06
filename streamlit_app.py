@@ -707,14 +707,15 @@ blok_f = [
     ["", "", "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb", "Lu", ""],
     ["", "", "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No", "Lr", ""]
 ]
-for baris in blok_f:
-    kolom = st.columns(18)
-    for i, unsur in enumerate(baris):
-        with kolom[i]:
-            if unsur != "":
-                if unsur in unsur_data:
-                    if st.button(unsur, use_container_width=True, key=f"f_{unsur}", type="primary"):
-                        st.session_state.unsur_terpilih = unsur
+# --- MENAMPILKAN TOMBOL DI GRID ---
+        for baris in grid_tabel:
+            kolom = st.columns(18)
+            for i, unsur in enumerate(baris):
+                with kolom[i]:
+                    if unsur != "":
+                        # Langsung buat tombol tanpa mengecek ke unsur_data
+                        if st.button(unsur, use_container_width=True):
+                            st.session_state.unsur_terpilih = unsur
                 else:
                     st.button(unsur, use_container_width=True, disabled=True, key=f"f_{unsur}")
 
