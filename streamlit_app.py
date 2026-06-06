@@ -695,6 +695,7 @@ for baris in grid_tabel:
             # Langsung buat tombol tanpa mengecek ke unsur_data
             if st.button(unsur, use_container_width=True):         
                 st.session_state.unsur_terpilih = unsur
+                
                 else:
                     # Jika unsur belum ditambahkan, buat tombol menjadi "disabled" (abu-abu)
                     st.button(unsur, use_container_width=True, disabled=True)
