@@ -4,6 +4,13 @@ import pandas as pd
 # 1. Konfigurasi Halaman (Lebar Penuh agar tabel muat)
 st.set_page_config(page_title="Tabel Periodik Interaktif", layout="wide", page_icon="🧪")
 
+# 2. Inisialisasi Session State (Ingatan Aplikasi)
+if 'status_masuk' not in st.session_state:
+    st.session_state.status_masuk = False
+
+if 'unsur_terpilih' not in st.session_state:
+    st.session_state.unsur_terpilih = "H"
+
 # 3. Logika Antarmuka (Halaman Welcome vs Aplikasi Utama)
 if not st.session_state.status_masuk:
     # ===================================================
@@ -685,7 +692,6 @@ for baris in grid_tabel:
     for i, unsur in enumerate(baris):
         with kolom[i]:
             if unsur != "":  
-                if unsur in unsur_data:
                     # Jika unsur ada di dictionary, jadikan tombol yang bisa diklik
                     if st.button(unsur, use_container_width=True, type="primary"):
                         st.session_state.unsur_terpilih = unsur
