@@ -4,7 +4,21 @@ import pandas as pd
 
 # Konfigurasi Halaman (Lebar Penuh agar tabel muat)
 st.set_page_config(page_title="Tabel Periodik Interaktif", layout="wide", page_icon="🧪")
-
+# 4. Logika Antarmuka (Halaman Welcome vs Aplikasi Utama)
+if not st.session_state.status_masuk:
+    # ===================================================
+    # TAMPILAN SELAMAT DATANG SIMPEL (TANPA SIDEBAR/KOLOM)
+    # ===================================================
+    st.markdown("<br><br><br>", unsafe_allow_html=True) # Memberi jarak dari atas agar teks di tengah
+    st.markdown("<h1 style='text-align: center;'>👋 Selamat Datang di Tabel Periodik Interaktif</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; font-size: 18px; color: #888;'>Aplikasi ensiklopedia simpel untuk mengeksplorasi properti dan sifat unsur kimia.</p>", unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    # Tombol lurus yang simpel untuk masuk ke aplikasi utama
+    if st.button("🚀 Mulai Eksplorasi Unsur", type="primary", use_container_width=True):
+        st.session_state.status_masuk = True
+        st.rerun()
+    else:
 # --- DATASET (GOLONGAN IA & IIA) ---
 unsur_data = {
     # GOLONGAN IA
