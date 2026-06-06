@@ -37,7 +37,7 @@ if not st.session_state.status_masuk:
         # Tombol untuk masuk ke aplikasi
         if st.button("🚀 Mulai Eksplorasi Unsur", type="primary", use_container_width=True):
             st.session_state.status_masuk = True
-            st.rerun() # Memuat ulang halaman untuk masuk ke aplikasi
+            st.rerun()
 
     with col2:
         st.markdown(
@@ -49,38 +49,6 @@ if not st.session_state.status_masuk:
             unsafe_allow_html=True
         )
 
-else:
-    # ==========================================
-    # APLIKASI UTAMA (SETELAH KLIK TOMBOL MASUK)
-    # ==========================================
-    
-    # Tombol untuk kembali ke Halaman Welcome di Sidebar
-    if st.sidebar.button("🏠 Kembali ke Beranda"):
-        st.session_state.status_masuk = False
-        st.rerun()
-        
-    st.sidebar.title("Navigasi Unsur")
-    st.sidebar.markdown("Silakan pilih unsur untuk melihat detailnya.")
-
-    daftar_pilihan = list(unsur_data.keys())
-    unsur_terpilih = st.sidebar.selectbox("🔍 Cari dan Pilih Unsur Kimia:", daftar_pilihan)
-
-    st.sidebar.divider()
-    st.sidebar.caption("© 2026 - Aplikasi Tabel Periodik")
-
-    # Render Detail Unsur Kimia
-    data = unsur_data[unsur_terpilih]
-    
-    st.title(f"🧪 {unsur_terpilih} ({data['Informasi Dasar']['Simbol']})")
-    st.markdown("---")
-
-    tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "📑 Informasi Dasar", 
-        "🧪 Sifat Kimia & Fisik", 
-        "🧊 Wujud Fisik", 
-        "⚠️ Kesehatan & Keselamatan", 
-        "🏭 Kegunaan"
-    ])
 
     def render_dict_to_columns(data_dict):
         col1, col2 = st.columns(2)
