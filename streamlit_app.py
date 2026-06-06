@@ -695,6 +695,7 @@ for baris in grid_tabel:
                 if unsur in unsur_data:
                     # Jika unsur ada di dictionary, jadikan tombol yang bisa diklik
                     if st.button(unsur, use_container_width=True, type="primary"):
+                        
                 else:
                     # Jika unsur belum ditambahkan, buat tombol menjadi "disabled" (abu-abu)
                     st.button(unsur, use_container_width=True, disabled=True)
@@ -713,7 +714,7 @@ for baris in blok_f:
             if unsur != "":
                 if unsur in unsur_data:
                     if st.button(unsur, use_container_width=True, key=f"f_{unsur}", type="primary"):
-                        st.session_state.unsur_terpilih = unsur
+                        
                 else:
                     st.button(unsur, use_container_width=True, disabled=True, key=f"f_{unsur}")
 
