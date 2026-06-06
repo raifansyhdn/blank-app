@@ -714,7 +714,7 @@ for baris in blok_f:
             if unsur != "":
                 if unsur in unsur_data:
                     if st.button(unsur, use_container_width=True, key=f"f_{unsur}", type="primary"):
-                        
+                        pass
                 else:
                     st.button(unsur, use_container_width=True, disabled=True, key=f"f_{unsur}")
 
