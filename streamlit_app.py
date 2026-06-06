@@ -667,80 +667,89 @@ else:
                 "Kegunaan": "Penelitian ilmiah untuk membuktikan model batas-batas fisika tabel periodik."
             },
         }
-    # --- LAYOUT TABEL PERIODIK INTERAKTIF ---
-    st.title("Tabel Periodik Unsur Kimia Interaktif ⚛️")
-    st.caption("Klik tombol simbol unsur di bawah ini untuk melihat detail lengkapnya.")
+st.title("Tabel Periodik Unsur Kimia Interaktif ⚛️")
+st.write("Klik pada unsur yang tersedia (warna dapat diklik) untuk melihat detailnya di bagian bawah.")
 
-    st.markdown("### 📅 Golongan IA & IIA")
+# Menyimpan unsur yang diklik
+if 'unsur_terpilih' not in st.session_state:
+    st.session_state.unsur_terpilih = 'H'
 
-    # Membuat grid tombol tabel periodik
-    c1, c2, c3, c4 = st.columns([1, 1, 1, 7])
+# --- LAYOUT MATRIKS TABEL PERIODIK ---
+# Daftar baris mewakili 7 Periode dan 18 Golongan. Spasi kosong diisi dengan string kosong ("")
+grid_tabel = [
+    ["H", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "He"],
+    ["Li", "Be", "", "", "", "", "", "", "", "", "", "", "B", "C", "N", "O", "F", "Ne"],
+    ["Na", "Mg", "", "", "", "", "", "", "", "", "", "", "Al", "Si", "P", "S", "Cl", "Ar"],
+    ["K", "Ca", "Sc", "Ti", "V", "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn", "Ga", "Ge", "As", "Se", "Br", "Kr"],
+    ["Rb", "Sr", "Y", "Zr", "Nb", "Mo", "Tc", "Ru", "Rh", "Pd", "Ag", "Cd", "In", "Sn", "Sb", "Te", "I", "Xe"],
+    ["Cs", "Ba", "*", "Hf", "Ta", "W", "Re", "Os", "Ir", "Pt", "Au", "Hg", "Tl", "Pb", "Bi", "Po", "At", "Rn"],
+    ["Fr", "Ra", "**", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", "Ds", "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"]
+]
 
-    with c1:
-        st.subheader("Golongan IA")
-        if st.button("H (1)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "H" else "secondary"):
-            st.session_state.unsur_terpilih = "H"
-        if st.button("Li (3)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Li" else "secondary"):
-            st.session_state.unsur_terpilih = "Li"
-        if st.button("Na (11)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Na" else "secondary"):
-            st.session_state.unsur_terpilih = "Na"
-        if st.button("K (19)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "K" else "secondary"):
-            st.session_state.unsur_terpilih = "K"
-        if st.button("Rb (37)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Rb" else "secondary"):
-            st.session_state.unsur_terpilih = "Rb"
-        if st.button("Cs (55)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Cs" else "secondary"):
-            st.session_state.unsur_terpilih = "Cs"
-        if st.button("Fr (87)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Fr" else "secondary"):
-            st.session_state.unsur_terpilih = "Fr"
+# Menggambar Tabel Periodik
+for baris in grid_tabel:
+    kolom = st.columns(18) # Membagi layar menjadi 18 kolom sama besar
+    for i, unsur in enumerate(baris):
+        with kolom[i]:
+            if unsur != "":  
+                if unsur in unsur_data:
+                    # Jika unsur ada di dictionary, jadikan tombol yang bisa diklik
+                    if st.button(unsur, use_container_width=True, type="primary"):
+                        st.session_state.unsur_terpilih = unsur
+                else:
+                    # Jika unsur belum ditambahkan, buat tombol menjadi "disabled" (abu-abu)
+                    st.button(unsur, use_container_width=True, disabled=True)
 
-    with c2:
-        st.subheader("Golongan IIA")
-        st.write("") # Pengisi jarak agar baris sejajar Periode 2
-        if st.button("Be (4)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Be" else "secondary"):
-            st.session_state.unsur_terpilih = "Be"
-        if st.button("Mg (12)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Mg" else "secondary"):
-            st.session_state.unsur_terpilih = "Mg"
-        if st.button("Ca (20)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Ca" else "secondary"):
-            st.session_state.unsur_terpilih = "Ca"
-        if st.button("Sr (38)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Sr" else "secondary"):
-            st.session_state.unsur_terpilih = "Sr"
-        if st.button("Ba (56)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Ba" else "secondary"):
-            st.session_state.unsur_terpilih = "Ba"
-        if st.button("Ra (88)", use_container_width=True, type="primary" if st.session_state.unsur_terpilih == "Ra" else "secondary"):
-            st.session_state.unsur_terpilih = "Ra"
+# Tambahan untuk Lantanida & Aktinida di bawah
+st.write("")
+st.caption("Blok-f (Lantanida & Aktinida)")
+blok_f = [
+    ["", "", "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb", "Lu", ""],
+    ["", "", "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No", "Lr", ""]
+]
+for baris in blok_f:
+    kolom = st.columns(18)
+    for i, unsur in enumerate(baris):
+        with kolom[i]:
+            if unsur != "":
+                if unsur in unsur_data:
+                    if st.button(unsur, use_container_width=True, key=f"f_{unsur}", type="primary"):
+                        st.session_state.unsur_terpilih = unsur
+                else:
+                    st.button(unsur, use_container_width=True, disabled=True, key=f"f_{unsur}")
 
-    # --- TAMPILAN INFORMASI DETAIL UNSUR YANG DIKLIK ---
-    st.divider()
+st.markdown("---")
 
-    if st.session_state.unsur_terpilih in unsur_data:
-        unsur_aktif = unsur_data[st.session_state.unsur_terpilih]
-        
-        st.header(f"🔎 Detail Unsur: {unsur_aktif['Informasi Dasar']['Nama']} ({st.session_state.unsur_terpilih})")
-        st.caption(f"Nomor Atom: {unsur_aktif['Informasi Dasar']['Nomor Atom']} | Kategori: {unsur_aktif['Informasi Dasar']['Kategori']}")
-        
-        tab1, tab2, tab3, tab4, tab5 = st.tabs([
-            "Informasi Dasar", "Sifat Kimia & Fisik", "Wujud Fisik", "Kesehatan & Keselamatan", "Kegunaan"
-        ])
-        
-        with tab1:
-            df_dasar = pd.DataFrame(list(unsur_aktif["Informasi Dasar"].items()), columns=["Properti", "Nilai"])
-            st.dataframe(df_dasar, hide_index=True, use_container_width=True)
+# --- DETAIL UNSUR (DITAMPILKAN DI BAWAH TABEL) ---
+if st.session_state.unsur_terpilih in unsur_data:
+    unsur_aktif = unsur_data[st.session_state.unsur_terpilih]
+    
+    st.header(f"🔎 Detail Unsur: {unsur_aktif['Informasi Dasar']['Nama']} ({st.session_state.unsur_terpilih})")
+    st.caption(f"Nomor Atom: {unsur_aktif['Informasi Dasar']['Nomor Atom']} | Kategori: {unsur_aktif['Informasi Dasar']['Kategori']}")
+    
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+        "Informasi Dasar", "Sifat Kimia & Fisik", "Wujud Fisik", "Kesehatan & Keselamatan", "Kegunaan"
+    ])
+    
+    with tab1:
+        df_dasar = pd.DataFrame(list(unsur_aktif["Informasi Dasar"].items()), columns=["Properti", "Nilai"])
+        st.dataframe(df_dasar, hide_index=True, use_container_width=True)
 
-        with tab2:
-            for key, value in unsur_aktif["Sifat Kimia & Fisik"].items():
-                st.markdown(f"**{key}:** {value}")
+    with tab2:
+        for key, value in unsur_aktif["Sifat Kimia & Fisik"].items():
+            st.markdown(f"**{key}:** {value}")
 
-        with tab3:
-            c1, c2, c3 = st.columns(3)
-            c1.metric("Wujud (25°C)", unsur_aktif["Wujud Fisik"].get("Wujud (25°C)", "-"))
-            c2.metric("Warna", unsur_aktif["Wujud Fisik"].get("Warna", "-"))
-            c3.metric("Massa Jenis", unsur_aktif["Wujud Fisik"].get("Massa Jenis", "-"))
+    with tab3:
+        c1, c2, c3 = st.columns(3)
+        c1.metric("Wujud (25°C)", unsur_aktif["Wujud Fisik"].get("Wujud (25°C)", "-"))
+        c2.metric("Warna", unsur_aktif["Wujud Fisik"].get("Warna", "-"))
+        c3.metric("Massa Jenis", unsur_aktif["Wujud Fisik"].get("Massa Jenis", "-"))
 
-        with tab4:
-            st.warning(f"**Piktogram Keselamatan GHS:** {unsur_aktif['Kesehatan & Keselamatan']['Piktogram GHS']}")
-            st.markdown(f"**Tingkat Toksisitas:** {unsur_aktif['Kesehatan & Keselamatan']['Toksisitas']}")
-            st.markdown(f"**Bahaya Kesehatan:** {unsur_aktif['Kesehatan & Keselamatan']['Bahaya']}")
-            st.markdown(f"**Batas Paparan Kerja:** {unsur_aktif['Kesehatan & Keselamatan']['Batas Paparan']}")
+    with tab4:
+        st.info(f"**Piktogram GHS:** {unsur_aktif['Kesehatan & Keselamatan'].get('Piktogram GHS', '-')}")
+        for key, value in unsur_aktif["Kesehatan & Keselamatan"].items():
+            if key != "Piktogram GHS":
+                st.write(f"**{key}:** {value}")
 
-        with tab5:
-            st.info(f"💡 **Kegunaan Utama di Dunia Nyata:** {unsur_aktif['Kegunaan']}")
+    with tab5:
+        st.success(unsur_aktif.get("Kegunaan", "Belum ada data kegunaan."))
