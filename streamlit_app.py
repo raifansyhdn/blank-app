@@ -4,13 +4,6 @@ import pandas as pd
 # 1. Konfigurasi Halaman (Lebar Penuh agar tabel muat)
 st.set_page_config(page_title="Tabel Periodik Interaktif", layout="wide", page_icon="🧪")
 
-# 2. Inisialisasi Session State (Ingatan Aplikasi)
-if 'status_masuk' not in st.session_state:
-    st.session_state.status_masuk = False
-
-if 'unsur_terpilih' not in st.session_state:
-    st.session_state.unsur_terpilih = "H"
-
 # 3. Logika Antarmuka (Halaman Welcome vs Aplikasi Utama)
 if not st.session_state.status_masuk:
     # ===================================================
