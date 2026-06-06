@@ -2,6 +2,89 @@ import streamlit as st
 import streamlit as st
 import pandas as pd
 
+# Konfigurasi halaman
+st.set_page_config(
+    page_title="Tabel Periodik Interaktif",
+    page_icon="⚛️",
+    layout="wide"
+)
+
+# CSS kustom
+st.markdown("""
+<style>
+.main-title {
+    text-align: center;
+    color: #00BFFF;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #CCCCCC;
+}
+
+.info-box {
+    background-color: rgba(0, 123, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #00BFFF;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# Header
+st.markdown('<p class="main-title">⚛️ Tabel Periodik Interaktif</p>',
+            unsafe_allow_html=True)
+
+st.markdown(
+    '<p class="subtitle">Jelajahi seluruh unsur kimia dengan informasi lengkap dan interaktif</p>',
+    unsafe_allow_html=True
+)
+
+st.divider()
+
+# Deskripsi utama
+st.markdown("""
+<div class="info-box">
+
+### Selamat Datang 👋
+
+Aplikasi **Tabel Periodik Interaktif** dirancang untuk membantu pelajar,
+mahasiswa, guru, analis laboratorium, dan peneliti dalam mempelajari
+seluruh unsur kimia secara lebih mudah dan mendalam.
+
+#### Fitur yang tersedia:
+- 🔬 Data lengkap 118 unsur kimia
+- ⚛️ Nomor atom dan massa atom relatif
+- 🧪 Konfigurasi elektron
+- 🌡️ Titik leleh dan titik didih
+- 💎 Sifat fisika dan kimia
+- ☢️ Isotop penting
+- ⚠️ Tingkat bahaya dan keselamatan
+- 🏭 Kegunaan industri
+- 📖 Sejarah penemuan unsur
+- 📊 Visualisasi dan pencarian interaktif
+
+Mulailah menjelajahi dunia kimia dan temukan informasi lengkap mengenai setiap unsur dalam tabel periodik.
+
+</div>
+""", unsafe_allow_html=True)
+
+st.write("")
+
+# Tombol mulai
+if st.button("🚀 Mulai Menjelajah", use_container_width=True):
+    st.success("Selamat belajar kimia! Pilih unsur pada tabel periodik untuk melihat detailnya.")
+
+st.write("")
+st.write("")
+
+# Footer
+st.caption(
+    "© 2026 Tabel Periodik Interaktif | Dibuat untuk pendidikan, penelitian, dan pembelajaran kimia."
+)
 # Konfigurasi Halaman (Lebar Penuh agar tabel muat)
 st.set_page_config(page_title="Tabel Periodik Interaktif", layout="wide", page_icon="🧪")
 
