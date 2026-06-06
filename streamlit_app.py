@@ -689,12 +689,12 @@ grid_tabel = [
 # Menggambar Tabel Periodik
 for baris in grid_tabel:
     kolom = st.columns(18) # Membagi layar menjadi 18 kolom sama besar
-    for i, unsur in enumerate(baris):
-        with kolom[i]:
-            if unsur != "":  
-                    # Jika unsur ada di dictionary, jadikan tombol yang bisa diklik
-                    if st.button(unsur, use_container_width=True, type="primary"):
-                        st.session_state.unsur_terpilih = unsur
+    for i, unsur in enumerate(baris):                                   
+    with kolom[i]:                                                  
+        if unsur != "":                                             
+            # Langsung buat tombol tanpa mengecek ke unsur_data
+            if st.button(unsur, use_container_width=True):         
+                st.session_state.unsur_terpilih = unsur
                 else:
                     # Jika unsur belum ditambahkan, buat tombol menjadi "disabled" (abu-abu)
                     st.button(unsur, use_container_width=True, disabled=True)
