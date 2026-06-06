@@ -731,30 +731,3 @@ st.set_page_config(page_title="Tabel Periodik Interaktif", page_icon="🧪", lay
     # ==========================================
     st.title("👋 Selamat Datang di Ensiklopedia Unsur Kimia")
     st.markdown("---")
-    
-    col1, col2 = st.columns([2, 1])
-    
-    with col1:
-        st.markdown("""
-        Aplikasi ini adalah **Tabel Periodik Interaktif** yang dirancang untuk membantu Anda mempelajari berbagai unsur kimia dengan mudah dan detail. 
-        
-        Melalui aplikasi ini, Anda dapat mengeksplorasi:
-        * 📑 **Informasi Dasar** (Massa atom, konfigurasi elektron, dll)
-        * 🧪 **Sifat Kimia & Fisik** (Reaktivitas, kelarutan)
-        * 🧊 **Wujud Fisik** (Massa jenis, wujud pada suhu ruang)
-        * ⚠️ **Kesehatan & Keselamatan** (Piktogram GHS dan tingkat toksisitas)
-        * 🏭 **Kegunaan** (Aplikasi di dunia nyata)
-        """)
-        
-        st.info("👈 **Cara Penggunaan:** Silakan buka menu dropdown di sebelah kiri (Sidebar) dan pilih unsur kimia yang ingin Anda pelajari!")
-
-    with col2:
-        # Menampilkan gambar ilustrasi sains (menggunakan placeholder/emoji besar jika tidak ada file gambar)
-        st.markdown(
-            """
-            <div style="text-align: center; font-size: 100px;">
-                🔬🧪⚛️
-            </div>
-            """, 
-            unsafe_allow_html=True
-        )
