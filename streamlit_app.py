@@ -9,7 +9,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# CSS kustom
 st.markdown("""
 <style>
 .main-title {
@@ -720,7 +719,7 @@ unsur_data = {
 st.title("Tabel Periodik Unsur Kimia Interaktif ⚛️")
 st.write("Klik pada unsur yang tersedia (warna dapat diklik) untuk melihat detailnya di bagian bawah.")
 
-# Menyimpan unsur yang diklik
+
 if 'unsur_terpilih' not in st.session_state:
     st.session_state.unsur_terpilih = 'H'
 
