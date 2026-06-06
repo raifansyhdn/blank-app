@@ -720,8 +720,3 @@ if st.session_state.unsur_terpilih in unsur_data:
 
     with tab5:
         st.success(unsur_aktif.get("Kegunaan", "Belum ada data kegunaan."))
-import streamlit as st
-import pandas as pd
-
-    st.title("👋 Selamat Datang di Ensiklopedia Unsur Kimia")
-    st.markdown("---")
