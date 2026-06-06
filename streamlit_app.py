@@ -1,17 +1,10 @@
 import streamlit as st
+import streamlit as st
 import pandas as pd
 
-# 1. Konfigurasi Halaman (Lebar Penuh agar tabel muat)
+# Konfigurasi Halaman (Lebar Penuh agar tabel muat)
 st.set_page_config(page_title="Tabel Periodik Interaktif", layout="wide", page_icon="🧪")
-
-# 2. Inisialisasi Session State (Ingatan Aplikasi)
-if 'status_masuk' not in st.session_state:
-    st.session_state.status_masuk = False
-
-if 'unsur_terpilih' not in st.session_state:
-    st.session_state.unsur_terpilih = "H"
-
-# 3. Logika Antarmuka (Halaman Welcome vs Aplikasi Utama)
+# 4. Logika Antarmuka (Halaman Welcome vs Aplikasi Utama)
 if not st.session_state.status_masuk:
     # ===================================================
     # TAMPILAN SELAMAT DATANG SIMPEL (TANPA SIDEBAR/KOLOM)
@@ -25,21 +18,9 @@ if not st.session_state.status_masuk:
     if st.button("🚀 Mulai Eksplorasi Unsur", type="primary", use_container_width=True):
         st.session_state.status_masuk = True
         st.rerun()
-
-else:
-    # ===================================================
-    # APLIKASI UTAMA (SETELAH TOMBOL MASUK DIKLIK)
-    # ===================================================
-    
-    # Tombol untuk keluar / kembali ke Halaman Welcome (Ditaruh di Sidebar)
-    if st.sidebar.button("🏠 Keluar ke Beranda"):
-        st.session_state.status_masuk = False
-        st.rerun()
-        
-    st.sidebar.divider()
-
-    # --- DATASET (GOLONGAN IA & IIA) ---
-    unsur_data = {
+    else:  
+     # --- DATASET (GOLONGAN IA & IIA) ---
+            unsur_data = {
             # GOLONGAN IA
             "H": {"Informasi Dasar": {"Nama": "Hidrogen", "Nomor Atom": 1, "Kategori": "Non-logam", "Massa Atom Relatif": 1.008, "Golongan": "IA", "Periode": 1, "Konfigurasi Elektron": "1s¹", "Tahun Ditemukan": 1766}, "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat reaktif pada suhu tinggi"}, "Wujud Fisik": {"Wujud (25°C)": "Gas", "Warna": "Tidak berwarna", "Massa Jenis": "0.08988 g/L"}, "Kesehatan & Keselamatan": {"Toksisitas": "Rendah", "Piktogram GHS": "🔥", "Bahaya Kesehatan": "Asfiksian", "Batas Paparan": "Tidak ada"}, "Kegunaan": "Bahan bakar roket, amonia."},
             "Li": {"Informasi Dasar": {"Nama": "Litium", "Nomor Atom": 3, "Kategori": "Logam Alkali", "Massa Atom Relatif": 6.94, "Golongan": "IA", "Periode": 2, "Konfigurasi Elektron": "[He] 2s¹", "Tahun Ditemukan": 1817}, "Sifat Kimia & Fisik": {"Reaktivitas": "Sangat reaktif, mudah teroksidasi"}, "Wujud Fisik": {"Wujud (25°C)": "Padat", "Warna": "Putih keperakan", "Massa Jenis": "0.534 g/cm³"}, "Kesehatan & Keselamatan": {"Toksisitas": "Sedang", "Piktogram GHS": "🔥, ☠️", "Bahaya Kesehatan": "Korosif pada kulit", "Batas Paparan": "0.025 mg/m³"}, "Kegunaan": "Baterai ion-litium."},
@@ -689,13 +670,13 @@ grid_tabel = [
 # Menggambar Tabel Periodik
 for baris in grid_tabel:
     kolom = st.columns(18) # Membagi layar menjadi 18 kolom sama besar
-    for i, unsur in enumerate(baris):                                   
-    with kolom[i]:                                                  
-        if unsur != "":                                             
-            # Langsung buat tombol tanpa mengecek ke unsur_data
-            if st.button(unsur, use_container_width=True):         
-                st.session_state.unsur_terpilih = unsur
-                
+    for i, unsur in enumerate(baris):
+        with kolom[i]:
+            if unsur != "":  
+                if unsur in unsur_data:
+                    # Jika unsur ada di dictionary, jadikan tombol yang bisa diklik
+                    if st.button(unsur, use_container_width=True, type="primary"):
+                        st.session_state.unsur_terpilih = unsur
                 else:
                     # Jika unsur belum ditambahkan, buat tombol menjadi "disabled" (abu-abu)
                     st.button(unsur, use_container_width=True, disabled=True)
@@ -707,15 +688,14 @@ blok_f = [
     ["", "", "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb", "Lu", ""],
     ["", "", "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No", "Lr", ""]
 ]
-# --- MENAMPILKAN TOMBOL DI GRID ---
-        for baris in grid_tabel:
-            kolom = st.columns(18)
-            for i, unsur in enumerate(baris):
-                with kolom[i]:
-                    if unsur != "":
-                        # Langsung buat tombol tanpa mengecek ke unsur_data
-                        if st.button(unsur, use_container_width=True):
-                            st.session_state.unsur_terpilih = unsur
+for baris in blok_f:
+    kolom = st.columns(18)
+    for i, unsur in enumerate(baris):
+        with kolom[i]:
+            if unsur != "":
+                if unsur in unsur_data:
+                    if st.button(unsur, use_container_width=True, key=f"f_{unsur}", type="primary"):
+                        st.session_state.unsur_terpilih = unsur
                 else:
                     st.button(unsur, use_container_width=True, disabled=True, key=f"f_{unsur}")
 
