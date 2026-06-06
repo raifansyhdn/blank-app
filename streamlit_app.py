@@ -2,6 +2,119 @@ import streamlit as st
 import streamlit as st
 import pandas as pd
 
+# 1. Konfigurasi Halaman
+st.set_page_config(page_title="Tabel Periodik Interaktif", page_icon="🧪", layout="wide")
+
+# 2. Inisialisasi Session State (Ingatan Aplikasi)
+# Jika 'status_masuk' belum ada, atur menjadi False (artinya pengguna baru datang)
+if 'status_masuk' not in st.session_state:
+    st.session_state.status_masuk = False
+
+# 4. Logika Antarmuka (Halaman Welcome vs Aplikasi Utama)
+if not st.session_state.status_masuk:
+    # ==========================================
+    # HALAMAN SELAMAT DATANG (WELCOME SCREEN)
+    # ==========================================
+    st.markdown("<h1 style='text-align: center;'>👋 Selamat Datang di Ensiklopedia Unsur Kimia</h1>", unsafe_allow_html=True)
+    st.markdown("---")
+    
+    col1, col2 = st.columns([2, 1])
+    
+    with col1:
+        st.markdown("""
+        Aplikasi ini adalah **Tabel Periodik Interaktif** yang dirancang untuk membantu Anda mempelajari berbagai unsur kimia dengan mudah dan detail. 
+        
+        Melalui aplikasi ini, Anda dapat mengeksplorasi:
+        * 📑 **Informasi Dasar** (Massa atom, konfigurasi elektron, dll)
+        * 🧪 **Sifat Kimia & Fisik** (Reaktivitas, kelarutan)
+        * 🧊 **Wujud Fisik** (Massa jenis, wujud pada suhu ruang)
+        * ⚠️ **Kesehatan & Keselamatan** (Piktogram GHS dan tingkat toksisitas)
+        * 🏭 **Kegunaan** (Aplikasi di dunia nyata)
+        """)
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        # Tombol untuk masuk ke aplikasi
+        if st.button("🚀 Mulai Eksplorasi Unsur", type="primary", use_container_width=True):
+            st.session_state.status_masuk = True
+            st.rerun() # Memuat ulang halaman untuk masuk ke aplikasi
+
+    with col2:
+        st.markdown(
+            """
+            <div style="text-align: center; font-size: 120px;">
+                🔬🧪⚛️
+            </div>
+            """, 
+            unsafe_allow_html=True
+        )
+
+else:
+    # ==========================================
+    # APLIKASI UTAMA (SETELAH KLIK TOMBOL MASUK)
+    # ==========================================
+    
+    # Tombol untuk kembali ke Halaman Welcome di Sidebar
+    if st.sidebar.button("🏠 Kembali ke Beranda"):
+        st.session_state.status_masuk = False
+        st.rerun()
+        
+    st.sidebar.title("Navigasi Unsur")
+    st.sidebar.markdown("Silakan pilih unsur untuk melihat detailnya.")
+
+    daftar_pilihan = list(unsur_data.keys())
+    unsur_terpilih = st.sidebar.selectbox("🔍 Cari dan Pilih Unsur Kimia:", daftar_pilihan)
+
+    st.sidebar.divider()
+    st.sidebar.caption("© 2026 - Aplikasi Tabel Periodik")
+
+    # Render Detail Unsur Kimia
+    data = unsur_data[unsur_terpilih]
+    
+    st.title(f"🧪 {unsur_terpilih} ({data['Informasi Dasar']['Simbol']})")
+    st.markdown("---")
+
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+        "📑 Informasi Dasar", 
+        "🧪 Sifat Kimia & Fisik", 
+        "🧊 Wujud Fisik", 
+        "⚠️ Kesehatan & Keselamatan", 
+        "🏭 Kegunaan"
+    ])
+
+    def render_dict_to_columns(data_dict):
+        col1, col2 = st.columns(2)
+        items = list(data_dict.items())
+        mid = (len(items) + 1) // 2
+        for k, v in items[:mid]:
+            col1.markdown(f"**{k}:** {v}")
+        for k, v in items[mid:]:
+            col2.markdown(f"**{k}:** {v}")
+
+    with tab1:
+        st.subheader("Data Dasar Unsur")
+        render_dict_to_columns(data["Informasi Dasar"])
+
+    with tab2:
+        st.subheader("Reaktivitas dan Sifat Lainnya")
+        render_dict_to_columns(data["Sifat Kimia & Fisik"])
+
+    with tab3:
+        st.subheader("Keadaan Fisik pada Suhu Ruang")
+        render_dict_to_columns(data["Wujud Fisik"])
+
+    with tab4:
+        st.subheader("Protokol Keselamatan dan Bahaya")
+        for k, v in data["Kesehatan & Keselamatan"].items():
+            if k == "Piktogram GHS":
+                st.warning(f"**{k}:** {v}")
+            else:
+                st.markdown(f"**{k}:** {v}")
+
+    with tab5:
+        st.subheader("Aplikasi di Dunia Nyata")
+        st.success(data["Kegunaan"])
+
 # Konfigurasi Halaman (Lebar Penuh agar tabel muat)
 st.set_page_config(page_title="Tabel Periodik Interaktif", layout="wide", page_icon="🧪")
 st.markdown("""
