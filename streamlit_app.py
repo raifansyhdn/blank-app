@@ -18,6 +18,7 @@ if not st.session_state.status_masuk:
     if st.button("🚀 Mulai Eksplorasi Unsur", type="primary", use_container_width=True):
         st.session_state.status_masuk = True
         st.rerun()
+        
 else:
 # --- DATASET (GOLONGAN IA & IIA) ---
 unsur_data = {
