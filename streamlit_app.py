@@ -33,15 +33,7 @@ if not st.session_state.status_masuk:
         """)
         
         st.markdown("<br>", unsafe_allow_html=True)
-
-        # ... (teks penjelasan Anda sebelumnya) ...
         
-        st.markdown("<br>", unsafe_allow_html=True) # Memberi jarak kosong
-        
-        # Tambahkan kode tombol ini:
-        if st.button("🚀 Mulai Eksplorasi Unsur", type="primary", use_container_width=True):
-            st.session_state.status_masuk = True
-            st.rerun()
         # Tombol untuk masuk ke aplikasi
         if st.button("🚀 Mulai Eksplorasi Unsur", type="primary", use_container_width=True):
             st.session_state.status_masuk = True
@@ -62,21 +54,25 @@ else:
     # APLIKASI UTAMA (SETELAH KLIK TOMBOL MASUK)
     # ==========================================
     
-    # Tambahkan tombol kembali ini di paling atas agar pengguna bisa balik ke halaman Welcome
-    if st.button("🏠 Kembali ke Beranda"):
+    # Tombol untuk kembali ke Halaman Welcome di Sidebar
+    if st.sidebar.button("🏠 Kembali ke Beranda"):
         st.session_state.status_masuk = False
         st.rerun()
         
-    st.divider()
+    st.sidebar.title("Navigasi Unsur")
+    st.sidebar.markdown("Silakan pilih unsur untuk melihat detailnya.")
 
-    # 👇👇👇 PINDAHKAN SEMUA KODE TABEL PERIODIK KE BAWAH SINI 👇👇👇
-    # Pastikan semuanya menjorok ke dalam (indentasi) sejajar dengan st.divider() di atas.
+    daftar_pilihan = list(unsur_data.keys())
+    unsur_terpilih = st.sidebar.selectbox("🔍 Cari dan Pilih Unsur Kimia:", daftar_pilihan)
+
+    st.sidebar.divider()
+    st.sidebar.caption("© 2026 - Aplikasi Tabel Periodik")
+
+    # Render Detail Unsur Kimia
+    data = unsur_data[unsur_terpilih]
     
-    # Contoh:
-    # st.markdown("### 🔍 Detail Lengkap Unsur")
-    # daftar_unsur = list(unsur_data.keys())
-    # tabs = st.tabs(...)
-    # ... (dan seterusnya) ...
+    st.title(f"🧪 {unsur_terpilih} ({data['Informasi Dasar']['Simbol']})")
+    st.markdown("---")
 
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "📑 Informasi Dasar", 
