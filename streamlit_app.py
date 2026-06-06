@@ -723,11 +723,5 @@ if st.session_state.unsur_terpilih in unsur_data:
 import streamlit as st
 import pandas as pd
 
-# 1. Konfigurasi Halaman
-st.set_page_config(page_title="Tabel Periodik Interaktif", page_icon="🧪", layout="wide")
-
-    # ==========================================
-    # TAMPILAN SELAMAT DATANG (WELCOME SCREEN)
-    # ==========================================
     st.title("👋 Selamat Datang di Ensiklopedia Unsur Kimia")
     st.markdown("---")
