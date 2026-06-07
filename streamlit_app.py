@@ -886,27 +886,14 @@ else:  # Halaman Tabel Periodik
                         kategori_unsur = data_unsur["Informasi Dasar"].get("Kategori", "")
                         warna_bg = COLOR_MAP.get(kategori_unsur, "#FFFFFF")
         
-                        st.markdown(
-                            f"""
-                            <a href="?halaman=Tabel&element={unsur}" target="_self"> style="text-decoration: none;">
-                                <div style="
-                                    background-color: {warna_bg}; 
-                                    border: 1px solid rgba(0,0,0,0.1); 
-                                    border-radius: 8px; 
-                                    padding: 10px 2px; 
-                                    text-align: center; 
-                                    margin-bottom: 10px;
-                                    box-shadow: 1px 2px 5px rgba(0,0,0,0.05);
-                                    color: #333;
-                                    min-height: 80px;
-                                ">
-                                    <h3 style="margin: 0; font-size: 1.2rem;">{unsur}</h3>
-                                    <p style="margin: 0; font-size: 0.7rem; font-weight: bold;">{data_unsur['Informasi Dasar']['Nomor Atom']}</p>
-                                </div>
-                            </a>
-                            """, 
-                            unsafe_allow_html=True
-                        )
+                       st.markdown(f"""
+<a href="?halaman=Tabel&element={unsur}" target="_self" style="text-decoration:none;">
+    <div class="element-card">
+        <div class="symbol">{unsur}</div>
+        <div class="number">{nomor_atom}</div>
+    </div>
+</a>
+""", unsafe_allow_html=True)
                     else:
                         st.markdown(
                             f"""
