@@ -86,19 +86,19 @@ with st.sidebar:
         <p style="color: white; margin: 5px 0 0 0; font-size: 0.9em;">Kelompok 13</p>
     </div>
     """, unsafe_allow_html=True)
-    
+
     if "halaman" not in st.session_state:
-    st.session_state.halaman = "🔬 Tabel Periodik"
+        st.session_state.halaman = "🔬 Tabel Periodik"
 
-halaman = st.radio(
-    "📑 Pilih Halaman:",
-    ["🏠 Beranda", "🔬 Tabel Periodik", "👥 Profil Tim"],
-    index=["🏠 Beranda", "🔬 Tabel Periodik", "👥 Profil Tim"].index(st.session_state.halaman),
-    label_visibility="collapsed"
-)
+    halaman = st.radio(
+        "📑 Pilih Halaman:",
+        ["🏠 Beranda", "🔬 Tabel Periodik", "👥 Profil Tim"],
+        index=["🏠 Beranda", "🔬 Tabel Periodik", "👥 Profil Tim"].index(st.session_state.halaman),
+        label_visibility="collapsed"
+    )
 
-st.session_state.halaman = halaman
-    
+    st.session_state.halaman = halaman
+
     with st.expander("👥 Anggota Kelompok", expanded=True):
         anggota = [
             {"nama": "Hayu Raihanun", "nim": "2560641"},
@@ -106,12 +106,12 @@ st.session_state.halaman = halaman
             {"nama": "Nisfy Sabrina Flowerridha S", "nim": "2560728"},
             {"nama": "Raifan Syahdan Putra R", "nim": "2560742"}
         ]
+
         for member in anggota:
             st.markdown(f"**{member['nama']}**  \n`{member['nim']}`")
-    
-    st.divider()
-    st.caption(f"© 2024 Kelompok 13 | Politeknik AKA Bogor")
 
+    st.divider()
+    st.caption("© 2024 Kelompok 13 | Politeknik AKA Bogor")
 # ============ CONDITIONAL RENDERING HALAMAN ============
 if "halaman" in st.query_params:
     if st.query_params["halaman"] == "Tabel":
